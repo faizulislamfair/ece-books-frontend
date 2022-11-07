@@ -10,6 +10,24 @@ const AddUser = () => {
     const handleAddUser = event => {
         event.preventDefault();
         console.log(user);
+
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.acknowledged) {
+                    alert('User Added Successfully');
+                    event.target.reset();
+                }
+            })
+
+
+
     }
 
 
@@ -38,8 +56,8 @@ const AddUser = () => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password </Form.Label> <br />
-                <Form.Control onBlur={handleInputBlur} type="password" name="password" placeholder="Password" />
+                <Form.Label>Comment </Form.Label> <br />
+                <Form.Control onBlur={handleInputBlur} type="text" name="comment" placeholder="comment" />
             </Form.Group>
 
             <Button variant="primary" type="submit">
