@@ -1,0 +1,32 @@
+.main-section {
+    margin-top: 2rem;
+}
+
+
+.main-button {
+    color: #80422B;
+    border: 2px solid #80422B;
+}
+
+.main-button:hover {
+    color: #FFFFFF;
+    background-color: #80422B;
+}
+
+
+.main-text {
+    margin-top: 3rem;
+    font-size: 35px;
+    text-align: center;
+    line-height: 54.47px;
+}
+
+
+.image-section {
+    margin-top: 2rem;
+}
+
+
+.image-section img {
+    width: 50%;
+}

@@ -1,30 +1,16 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import './Home.css';
+import main_image from './../../assets/images/main_image.svg';
 
 const Home = () => {
-
-    const users = useLoaderData();
-
-
-    const handleDelete = user => {
-        const agree = window.confirm(`Are you sure you want to delete: ${user.name}`);
-
-        if (agree) {
-            console.log(`deleting user with id: `, user._id);
-        }
-    }
-
-
     return (
-        <div>
-            <h2>Users: {users.length}</h2>
-            <div>
-                {
-                    users.map(user => <p
-                        key={user._id}>
-                        {user.name} {user.comment} <button onClick={() => handleDelete(user)}>X</button>
-                    </p>)
-                }
+        <div className="main-section container">
+            <button className='main-button btn'>ECE Books</button>
+            <div className="main-text">
+                Download all of your academic book pdf from one place without any hustle!
+            </div>
+            <div className="image-section">
+                <img src={main_image} alt="" />
             </div>
         </div>
     );
