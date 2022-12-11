@@ -17,7 +17,10 @@ const Home = () => {
             </div>
 
 
-            <button className='btn all-books'>Download Books</button>
+            <button className='btn all-books'>Download Books</button> <br />
+
+
+
 
             <div className="image-section">
                 <img src={main_image} alt="" />
@@ -29,10 +32,16 @@ const Home = () => {
 
             <div className="book-section">
                 <div>
-                    kola
+                    <div className='rectangle rect-gap'>
+                    </div>
+                    <div className='rectangle'>
+                    </div>
                 </div>
-                <div>
-                    kola
+                <div className='text-flex'>
+                    <div className='text-start download-text'>
+                        Select your preferred year <br />
+                        & semester
+                    </div>
                 </div>
                 <div>
                     kola

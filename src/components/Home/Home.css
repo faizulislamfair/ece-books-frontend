@@ -63,6 +63,33 @@ body {
 }
 
 
+.rectangle {
+    background-color: #F0BE90;
+    width: 12px;
+    height: 96px;
+}
+
+.rect-gap {
+    margin-bottom: 84px;
+}
+
+
+.download-text {
+    width: 412px;
+    height: 96px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+.text-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5B342B;
+}
+
 
 /* animations */
 
