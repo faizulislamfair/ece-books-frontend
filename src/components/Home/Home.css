@@ -1,6 +1,8 @@
 body {
     color: #23191D;
-    ;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .main-section {
@@ -52,14 +54,15 @@ body {
 
 
 .image-section img {
-    width: 50%;
+    width: 55%;
 }
 
 
 .book-section {
-    margin-top: 150px;
+    margin-top: 135px;
     display: grid;
-    grid-template-columns: 100px 2fr 1fr 1fr;
+    grid-template-columns: 20px 2fr 2fr 2fr;
+    gap: 35px;
 }
 
 
@@ -88,6 +91,54 @@ body {
     justify-content: center;
     align-items: center;
     color: #5B342B;
+}
+
+
+.btn-box {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #5B342B;
+}
+
+
+.btn-box>.each-button {
+    height: 60px;
+    color: #5B342B;
+    border: 2px solid #F0BE90;
+    background-color: #ffffff;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+
+.btn-box>.each-button:hover {
+    background-color: #F0BE90;
+    color: #ffffff;
+}
+
+.btn-box>.last-button {
+    height: 60px;
+    color: #5B342B;
+    border: 2px solid #F0BE90;
+    background-color: #ffffff;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.btn-box>.last-button:hover {
+    background-color: #F0BE90;
+    color: #ffffff;
+}
+
+
+.reverse-doodle {
+    transform: translate(-215px, 285px);
 }
 
 

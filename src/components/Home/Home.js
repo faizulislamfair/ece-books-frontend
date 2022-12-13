@@ -3,6 +3,8 @@ import './Home.css';
 import main_image from './../../assets/images/main_image.svg';
 import under_arrow from './../../assets/images/under_arrow.png';
 import text_under from './../../assets/images/text_under.svg';
+import button_arrow from './../../assets/images/button_arrow.svg';
+import reverse_doodle from './../../assets/images/reverse_doodle.svg';
 
 
 const Home = () => {
@@ -30,7 +32,11 @@ const Home = () => {
                 <img src={under_arrow} alt="" />
             </div>
 
-            <div className="book-section">
+
+            <img className='reverse-doodle' src={reverse_doodle} alt="" />
+
+
+            <div className="book-section mb-5">
                 <div>
                     <div className='rectangle rect-gap'>
                     </div>
@@ -43,11 +49,17 @@ const Home = () => {
                         & semester
                     </div>
                 </div>
-                <div>
-                    kola
+                <div className='btn-box'>
+                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='last-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
                 </div>
-                <div>
-                    kola
+                <div className='btn-box'>
+                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='last-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
                 </div>
             </div>
 
