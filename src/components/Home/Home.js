@@ -51,15 +51,15 @@ const Home = () => {
                 </div>
                 <div className='btn-box'>
                     <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='last-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='each-button'>2nd year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='each-button'>3rd year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='last-button'>4th year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
                 </div>
                 <div className='btn-box'>
-                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='last-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='each-button'>1st year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='each-button'>2nd year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='each-button'>3rd year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <button className='last-button'>4th year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
                 </div>
             </div>
 
