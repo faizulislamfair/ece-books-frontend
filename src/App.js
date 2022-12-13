@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
+import OneOne from './components/OneOne/OneOne';
 
 function App() {
 
@@ -8,6 +9,13 @@ function App() {
     {
       path: '/',
       element: <Home></Home>,
+    },
+    {
+      path: '/one_one',
+      loader: async () => {
+        return fetch('http://localhost:5000/one_one');
+      },
+      element: <OneOne></OneOne>
     }
   ])
 

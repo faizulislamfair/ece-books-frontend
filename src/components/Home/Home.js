@@ -5,6 +5,7 @@ import under_arrow from './../../assets/images/under_arrow.png';
 import text_under from './../../assets/images/text_under.svg';
 import button_arrow from './../../assets/images/button_arrow.svg';
 import reverse_doodle from './../../assets/images/reverse_doodle.svg';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -50,16 +51,16 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='btn-box'>
-                    <button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='each-button'>2nd year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='each-button'>3rd year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='last-button'>4th year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <Link style={{ textDecoration: 'none' }} to={`/one_one`}><button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
+                    <Link style={{ textDecoration: 'none' }} to={`/two_one`}><button className='each-button'>2nd year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
+                    <Link style={{ textDecoration: 'none' }} to={`/three_one`}><button className='each-button'>3rd year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
+                    <Link style={{ textDecoration: 'none' }} to={`/four_one`}><button className='last-button'>4th year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
                 </div>
                 <div className='btn-box'>
-                    <button className='each-button'>1st year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='each-button'>2nd year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='each-button'>3rd year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
-                    <button className='last-button'>4th year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button>
+                    <Link style={{ textDecoration: 'none' }} to={`/one_two`}><button className='each-button'>1st year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
+                    <Link style={{ textDecoration: 'none' }} to={`/two_two`}><button className='each-button'>2nd year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
+                    <Link style={{ textDecoration: 'none' }} to={`/three_two`}><button className='each-button'>3rd year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
+                    <Link style={{ textDecoration: 'none' }} to={`/four_two`}><button className='last-button'>4th year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
                 </div>
             </div>
 

@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
 }
 
+Link {
+    background-color: #ffffff;
+}
+
 .main-section {
     margin-top: 2rem;
 }
@@ -106,7 +110,8 @@ body {
 }
 
 
-.btn-box>.each-button {
+.each-button {
+    width: 298px;
     height: 60px;
     color: #5B342B;
     border: 2px solid #F0BE90;
@@ -116,13 +121,14 @@ body {
     border-bottom: 0px;
 }
 
-
-.btn-box>.each-button:hover {
+.each-button:hover {
+    width: 298px;
     background-color: #F0BE90;
     color: #ffffff;
 }
 
-.btn-box>.last-button {
+.last-button {
+    width: 298px;
     height: 60px;
     color: #5B342B;
     border: 2px solid #F0BE90;
@@ -131,7 +137,8 @@ body {
     border-right: 0px;
 }
 
-.btn-box>.last-button:hover {
+.last-button:hover {
+    width: 298px;
     background-color: #F0BE90;
     color: #ffffff;
 }
