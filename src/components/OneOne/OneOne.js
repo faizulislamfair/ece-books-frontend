@@ -10,7 +10,9 @@ const OneOne = () => {
 
     return (
         <div>
-
+            {
+                oneOne.map((each_book, id) => <div key={id + 1}>{each_book.name}</div>)
+            }
         </div>
     );
 };
