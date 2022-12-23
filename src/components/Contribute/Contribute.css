@@ -1,0 +1,27 @@
+.contribute-section {
+    margin-top: 216px;
+}
+
+
+.contribute-section-main {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+
+.contribute-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.small-rectangle {
+    background-color: #F0BE90;
+    width: 6px;
+    height: 48px;
+}

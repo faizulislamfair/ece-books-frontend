@@ -1,0 +1,70 @@
+.form-control {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    display: block;
+    width: 627px;
+    height: 80px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgba(240, 190, 144, 0.1);
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.form-control-message {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    display: block;
+    width: 627px;
+    height: 233px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgba(240, 190, 144, 0.1);
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.form-text {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #5B342B;
+}
+
+.sign-in {
+    width: 196px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #80422B;
+    border: 1px solid #80422B;
+}
+
+.sign-in:hover {
+    color: #DCDCDC;
+    background-color: #80422B;
+}
+
+.submit {
+    width: 196px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #DCDCDC;
+    background-color: #80422B;
+}
+
+.submit:hover {
+    color: #80422B;
+    border: 1px solid #80422B;
+}

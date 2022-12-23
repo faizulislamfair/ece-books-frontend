@@ -6,6 +6,7 @@ import text_under from './../../assets/images/text_under.svg';
 import button_arrow from './../../assets/images/button_arrow.svg';
 import reverse_doodle from './../../assets/images/reverse_doodle.svg';
 import { Link } from 'react-router-dom';
+import Contribute from './../Contribute/Contribute';
 
 
 const Home = () => {
@@ -63,6 +64,8 @@ const Home = () => {
                     <Link style={{ textDecoration: 'none' }} to={`/four_two`}><button className='last-button'>4th year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
                 </div>
             </div>
+
+            <Contribute></Contribute>
 
         </div>
     );
