@@ -48,6 +48,7 @@
     font-weight: 600;
     color: #80422B;
     border: 1px solid #80422B;
+    border-radius: 8px;
 }
 
 .sign-in:hover {
@@ -62,6 +63,7 @@
     font-weight: 600;
     color: #DCDCDC;
     background-color: #80422B;
+    border-radius: 8px;
 }
 
 .submit:hover {

@@ -8,13 +8,15 @@ import reverse_doodle from './../../assets/images/reverse_doodle.svg';
 import { Link } from 'react-router-dom';
 import Contribute from './../Contribute/Contribute';
 import Footer from './../Footer/Footer';
+import Nav from './../Nav/Nav';
 
 
 const Home = () => {
     return (
         <div>
             <div className="main-section container">
-                <button className='main-button btn'>ECE Books</button> <br />
+
+                <Nav></Nav>
 
                 <img className='text-merge' src={text_under} alt="" />
                 <div className="main-text">
@@ -23,7 +25,7 @@ const Home = () => {
                 </div>
 
 
-                <button className='btn all-books'>Download Books</button> <br />
+                <a href="#books"> <button className='btn all-books'>Download Books</button></a><br />
 
 
 
@@ -40,7 +42,7 @@ const Home = () => {
                 <img className='reverse-doodle' src={reverse_doodle} alt="" />
 
 
-                <div className="book-section mb-5">
+                <div id='books' className="book-section mb-5">
                     <div>
                         <div className='rectangle rect-gap'>
                         </div>

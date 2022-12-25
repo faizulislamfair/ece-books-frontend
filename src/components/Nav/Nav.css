@@ -1,0 +1,13 @@
+.title {
+    width: 152px;
+    height: 36px;
+    color: #80422B;
+    line-height: 36px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.nav-items {
+    flex-wrap: wrap;
+    gap: 20px;
+}

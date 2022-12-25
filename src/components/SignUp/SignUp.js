@@ -17,7 +17,7 @@ const SignUp = () => {
                 <input type="text" className="form-control-message" />
             </div>
             <div className='d-flex flex-row justify-content-between'>
-                <button className='btn sign-in'>SignIn</button>
+                <button className='btn sign-in'>Sign In</button>
                 <button className='btn submit'>Submit</button>
             </div>
         </form>
