@@ -8,7 +8,6 @@ import reverse_doodle from './../../assets/images/reverse_doodle.svg';
 import { Link } from 'react-router-dom';
 import Contribute from './../Contribute/Contribute';
 import Footer from './../Footer/Footer';
-import Nav from './../Nav/Nav';
 
 
 const Home = () => {
@@ -16,7 +15,6 @@ const Home = () => {
         <div>
             <div className="main-section container">
 
-                <Nav></Nav>
 
                 <img className='text-merge' src={text_under} alt="" />
                 <div className="main-text">

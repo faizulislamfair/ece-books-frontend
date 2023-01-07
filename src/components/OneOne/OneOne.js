@@ -1,18 +1,54 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, Link } from 'react-router-dom';
 import './OneOne.css';
+import OneOneBook from './../OneOneBook/OneOneBook';
+import text_merge from './../../assets/images/text_under.svg';
+import copyright_symbol from './../../assets/images/copyright_symbol.svg';
+import button_arrow from './../../assets/images/button_arrow.svg';
+import { useLayoutEffect } from 'react';
+
+
+
 
 const OneOne = () => {
 
     const oneOne = useLoaderData();
     console.log(oneOne);
 
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
 
     return (
-        <div>
-            {
-                oneOne.map((each_book, id) => <div key={id + 1}>{each_book.name}</div>)
-            }
+        <div className='container'>
+
+            <img className='book-merge' src={text_merge} alt="book" />
+            <div className="main-text book-header">
+                <Link to="/">
+                    <img className='rotate' src={button_arrow} alt="" />
+                </Link>
+                <div className='selected'>
+                    1st year Odd semester
+                </div>
+            </div>
+
+
+            <div className="container">
+                <div className="cards">
+                    {
+                        oneOne.map((each_book, id) => <OneOneBook key={id + 1} each_book={each_book}></OneOneBook>)
+                    }
+                </div>
+            </div>
+
+            <div className='copyright-section footer-book-gap'>
+                <img src={copyright_symbol} alt="" />
+                <div className='copyright-text'>
+                    2023 All Rights Reserved - Fair & Turag
+                </div>
+            </div>
+
         </div>
     );
 };

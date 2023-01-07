@@ -1,0 +1,11 @@
+.book_img {
+    width: 200px;
+    height: 300px;
+    border: 4px solid #F0BE90;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.book {
+    margin-top: 64px;
+}

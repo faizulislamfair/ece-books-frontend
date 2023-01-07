@@ -28,7 +28,7 @@ const Footer = () => {
             <div className='copyright-section'>
                 <img src={copyright_symbol} alt="" />
                 <div className='copyright-text'>
-                    2022 All Rights Reserved - Sajid, Fair & Turag
+                    2023 All Rights Reserved - Fair & Turag
                 </div>
             </div>
 

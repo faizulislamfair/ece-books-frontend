@@ -5,9 +5,11 @@
     line-height: 36px;
     font-size: 32px;
     font-weight: 400;
+    margin: 54px 0;
 }
 
 .nav-items {
     flex-wrap: wrap;
     gap: 20px;
+    margin: 54px 0;
 }

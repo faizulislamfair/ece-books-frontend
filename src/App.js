@@ -9,70 +9,75 @@ import ThreeOne from './components/ThreeOne/ThreeOne';
 import ThreeTwo from './components/ThreeTwo/ThreeTwo';
 import FourOne from './components/FourOne/FourOne';
 import FourTwo from './components/FourTwo/FourTwo';
+import Main from './layout/Main';
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Home></Home>,
+      element: <Main></Main>,
+      children: [
+        { path: '/', element: <Home></Home> },
+        {
+          path: '/one_one',
+          loader: async () => {
+            return fetch('http://localhost:5000/one_one');
+          },
+          element: <OneOne></OneOne>
+        },
+        {
+          path: '/one_two',
+          loader: async () => {
+            return fetch('http://localhost:5000/one_two');
+          },
+          element: <OneTwo></OneTwo>
+        },
+        {
+          path: '/two_one',
+          loader: async () => {
+            return fetch('http://localhost:5000/two_one');
+          },
+          element: <TwoOne></TwoOne>
+        },
+        {
+          path: '/two_two',
+          loader: async () => {
+            return fetch('http://localhost:5000/two_two');
+          },
+          element: <TwoTwo></TwoTwo>
+        },
+        {
+          path: '/three_one',
+          loader: async () => {
+            return fetch('http://localhost:5000/three_one');
+          },
+          element: <ThreeOne></ThreeOne>
+        },
+        {
+          path: '/three_two',
+          loader: async () => {
+            return fetch('http://localhost:5000/three_two');
+          },
+          element: <ThreeTwo></ThreeTwo>
+        },
+        {
+          path: '/four_one',
+          loader: async () => {
+            return fetch('http://localhost:5000/four_one');
+          },
+          element: <FourOne></FourOne>
+        },
+        {
+          path: '/four_two',
+          loader: async () => {
+            return fetch('http://localhost:5000/four_two');
+          },
+          element: <FourTwo></FourTwo>
+        }
+      ]
     },
-    {
-      path: '/one_one',
-      loader: async () => {
-        return fetch('http://localhost:5000/one_one');
-      },
-      element: <OneOne></OneOne>
-    },
-    {
-      path: '/one_two',
-      loader: async () => {
-        return fetch('http://localhost:5000/one_two');
-      },
-      element: <OneTwo></OneTwo>
-    },
-    {
-      path: '/two_one',
-      loader: async () => {
-        return fetch('http://localhost:5000/two_one');
-      },
-      element: <TwoOne></TwoOne>
-    },
-    {
-      path: '/two_two',
-      loader: async () => {
-        return fetch('http://localhost:5000/two_two');
-      },
-      element: <TwoTwo></TwoTwo>
-    },
-    {
-      path: '/three_one',
-      loader: async () => {
-        return fetch('http://localhost:5000/three_one');
-      },
-      element: <ThreeOne></ThreeOne>
-    },
-    {
-      path: '/three_two',
-      loader: async () => {
-        return fetch('http://localhost:5000/three_two');
-      },
-      element: <ThreeTwo></ThreeTwo>
-    },
-    {
-      path: '/four_one',
-      loader: async () => {
-        return fetch('http://localhost:5000/four_one');
-      },
-      element: <FourOne></FourOne>
-    },
-    {
-      path: '/four_two',
-      loader: async () => {
-        return fetch('http://localhost:5000/four_two');
-      },
-      element: <FourTwo></FourTwo>
-    }
+    // {path: '*', element:}
   ])
 
 
