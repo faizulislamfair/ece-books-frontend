@@ -1,5 +1,5 @@
 import React from 'react';
-import './OneOneBook.css';
+import './Book.css';
 
 const OneOneBook = ({ each_book }) => {
 

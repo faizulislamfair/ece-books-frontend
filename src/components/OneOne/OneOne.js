@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData, Link } from 'react-router-dom';
 import './OneOne.css';
-import OneOneBook from './../OneOneBook/OneOneBook';
+import Book from '../Book/Book';
 import text_merge from './../../assets/images/text_under.svg';
 import copyright_symbol from './../../assets/images/copyright_symbol.svg';
 import button_arrow from './../../assets/images/button_arrow.svg';
@@ -37,7 +37,7 @@ const OneOne = () => {
             <div className="container">
                 <div className="cards">
                     {
-                        oneOne.map((each_book, id) => <OneOneBook key={id + 1} each_book={each_book}></OneOneBook>)
+                        oneOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
                     }
                 </div>
             </div>

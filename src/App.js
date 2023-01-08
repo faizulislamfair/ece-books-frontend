@@ -22,14 +22,14 @@ function App() {
         {
           path: '/one_one',
           loader: async () => {
-            return fetch('http://localhost:5000/one_one');
+            return fetch('https://ece-books-server.vercel.app/one_one');
           },
           element: <OneOne></OneOne>
         },
         {
           path: '/one_two',
           loader: async () => {
-            return fetch('http://localhost:5000/one_two');
+            return fetch('https://ece-books-server.vercel.app/one_two');
           },
           element: <OneTwo></OneTwo>
         },
