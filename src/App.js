@@ -43,7 +43,7 @@ function App() {
         {
           path: '/two_two',
           loader: async () => {
-            return fetch('http://localhost:5000/two_two');
+            return fetch('https://ece-books-server.vercel.app/two_two');
           },
           element: <TwoTwo></TwoTwo>
         },
