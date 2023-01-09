@@ -10,10 +10,9 @@ import { useLayoutEffect } from 'react';
 
 
 
-const OneOne = () => {
+const OneTwo = () => {
 
-    const oneOne = useLoaderData();
-    console.log(oneOne);
+    const oneTwo = useLoaderData();
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
@@ -37,7 +36,7 @@ const OneOne = () => {
             <div className="container">
                 <div className="cards">
                     {
-                        oneOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
+                        oneTwo.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
                     }
                 </div>
             </div>
@@ -53,4 +52,4 @@ const OneOne = () => {
     );
 };
 
-export default OneOne;
+export default OneTwo;

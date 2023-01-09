@@ -13,7 +13,6 @@ import { useLayoutEffect } from 'react';
 const OneOne = () => {
 
     const oneOne = useLoaderData();
-    console.log(oneOne);
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)

@@ -50,14 +50,14 @@ function App() {
         {
           path: '/three_one',
           loader: async () => {
-            return fetch('http://localhost:5000/three_one');
+            return fetch('https://ece-books-server.vercel.app/three_one');
           },
           element: <ThreeOne></ThreeOne>
         },
         {
           path: '/three_two',
           loader: async () => {
-            return fetch('http://localhost:5000/three_two');
+            return fetch('https://ece-books-server.vercel.app/three_two');
           },
           element: <ThreeTwo></ThreeTwo>
         },
