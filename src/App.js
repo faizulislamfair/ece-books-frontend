@@ -71,7 +71,7 @@ function App() {
         {
           path: '/four_two',
           loader: async () => {
-            return fetch('http://localhost:5000/four_two');
+            return fetch('https://ece-books-server.vercel.app/four_two');
           },
           element: <FourTwo></FourTwo>
         }

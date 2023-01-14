@@ -47,7 +47,7 @@ Link {
 
 .text-merge {
     position: absolute;
-    transform: translate(-160px, 100px);
+    transform: translate(-160px, 42px);
     width: 22%;
     z-index: -1;
 }
