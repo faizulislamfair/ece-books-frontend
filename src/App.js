@@ -10,6 +10,10 @@ import ThreeTwo from './components/ThreeTwo/ThreeTwo';
 import FourOne from './components/FourOne/FourOne';
 import FourTwo from './components/FourTwo/FourTwo';
 import Main from './layout/Main';
+import Register from './components/Register/Register';
+import SignIn from './components/SignIn/SignIn';
+
+
 
 function App() {
 
@@ -74,6 +78,14 @@ function App() {
             return fetch('https://ece-books-server.vercel.app/four_two');
           },
           element: <FourTwo></FourTwo>
+        },
+        {
+          path: '/register',
+          element: <Register></Register>
+        },
+        {
+          path: '/signin',
+          element: <SignIn></SignIn>
         }
       ]
     },

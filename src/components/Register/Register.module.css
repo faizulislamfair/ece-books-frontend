@@ -1,0 +1,10 @@
+.register_section_main {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.register_section_main img {
+    width: 99%;
+}

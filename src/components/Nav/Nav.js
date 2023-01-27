@@ -13,8 +13,8 @@ const Nav = () => {
                     </div>
                 </Link>
                 <div className='d-flex flex-row justify-content-between nav-items'>
-                    <button className='btn sign-in'>Sign In</button>
-                    <button className='btn submit'>Sign Up</button>
+                    <Link style={{ textDecoration: 'none' }} to={`/signin`}><button className='btn sign-in'>Sign In</button></Link>
+                    <Link style={{ textDecoration: 'none' }} to={`/register`}><button className='btn submit'>Sign Up</button></Link>
                 </div>
             </div>
         </div>
