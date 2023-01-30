@@ -1,3 +1,29 @@
+.form_control {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    display: block;
+    width: 580px;
+    height: 60px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgba(240, 190, 144, 0.1);
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.form-text {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #5B342B;
+}
+
+
 .register_section_main {
     margin-top: 80px;
     display: grid;
