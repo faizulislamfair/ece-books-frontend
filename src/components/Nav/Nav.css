@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 .title {
+    font-family: 'EB Garamond', serif;
     height: 36px;
     color: #80422B;
     line-height: 36px;
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 400;
     margin: 54px 0;
 }

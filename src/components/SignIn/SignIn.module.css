@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+.login_title {
+    font-family: 'EB Garamond', serif;
+    height: 36px;
+    color: #80422B;
+    line-height: 36px;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+
+.form_control {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    display: block;
+    width: 580px;
+    height: 60px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgba(240, 190, 144, 0.1);
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.form-text {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #5B342B;
+}
+
+
+.login_section_main {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.login_section_main img {
+    width: 80%;
+}
+
+
+.text_error {
+    margin-bottom: 15px;
+    color: crimson;
+    background-color: aliceblue;
+    width: 580px;
+    margin-left: 10px;
+}

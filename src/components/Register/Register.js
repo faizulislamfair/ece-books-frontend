@@ -104,41 +104,44 @@ const Register = () => {
 
     return (
         <div className='container'>
+            <div className={Style.reg_title}>Sign Up</div>
             <div className={Style.register_section_main}>
                 <img src={signup} alt="" />
-                <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
-                        <p className='text-start form-text'>Name</p>
-                        <input type="text" name="name" className={Style.form_control} required />
-                    </div>
-                    <div className="mb-3">
-                        <p className='text-start form-text'>Email</p>
-                        <input type="email" name="email" className={Style.form_control} id="exampleInputEmail1" aria-describedby="emailHelp" required />
-                    </div>
-                    <div className="mb-3">
-                        <p className='text-start form-text'>Photo URL</p>
-                        <input type="text" name="photoURL" className={Style.form_control} id="" />
-                    </div>
-                    <div className="mb-3">
-                        <p className='text-start form-text'>Password</p>
-                        <input type="password" name="password" className={Style.form_control} id="" required />
-                    </div>
-                    <div className="mb-3">
-                        <p className='text-start form-text'>Confirm Password</p>
-                        <input type="password" name="confirm" className={Style.form_control} id="" required />
-                    </div>
+                <div>
+                    <form onSubmit={handleSubmit}>
+                        <div className="mb-3">
+                            <p className='text-start form-text'>Name</p>
+                            <input type="text" name="name" className={Style.form_control} required />
+                        </div>
+                        <div className="mb-3">
+                            <p className='text-start form-text'>Email</p>
+                            <input type="email" name="email" className={Style.form_control} id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                        </div>
+                        <div className="mb-3">
+                            <p className='text-start form-text'>Photo URL</p>
+                            <input type="text" name="photoURL" className={Style.form_control} id="" />
+                        </div>
+                        <div className="mb-3">
+                            <p className='text-start form-text'>Password</p>
+                            <input type="password" name="password" className={Style.form_control} id="" required />
+                        </div>
+                        <div className="mb-3">
+                            <p className='text-start form-text'>Confirm Password</p>
+                            <input type="password" name="confirm" className={Style.form_control} id="" required />
+                        </div>
+                        <br />
+                        <div className="mb-3">
+                            <input style={{ width: '580px', marginRight: '45px', height: '55px', fontSize: '1.5rem', fontWeight: '400', lineHeight: '1.5' }} className='btn submit' type="submit" value="Sign Up" />
+                        </div>
+                    </form>
                     <br />
-                    <div className="mb-3">
-                        <input style={{ width: '580px', marginRight: '45px', height: '55px', fontSize: '1.5rem', fontWeight: '400', lineHeight: '1.5' }} className='btn submit' type="submit" value="Submit" />
-                    </div>
-                </form>
-                <br />
-                <p style={{ fontSize: '20px' }}>Already have an account? <Link to='/signin'>Login</Link></p>
-                <h4 className='text-error'>{error}</h4>
-                <ButtonGroup vertical style={{ width: '92%', marginLeft: '5px' }}>
-                    <Button onClick={handleGoogleSignIn} className='mb-2 p-3' variant="outline-danger"> <FaGoogle></FaGoogle> Sign Up with Google</Button>
-                    <Button onClick={handleGithubSignIn} className='p-3' variant="outline-dark"><FaGithub></FaGithub> Sign Up with Github</Button>
-                </ButtonGroup>
+                    <p style={{ fontSize: '20px' }}>Already have an account? <Link to='/signin'>Sign In</Link></p>
+                    <h4 className='text-error'>{error}</h4>
+                    <ButtonGroup vertical style={{ width: '90%', marginRight: '40px' }}>
+                        <Button onClick={handleGoogleSignIn} className='mb-2 p-3' variant="outline-danger"> <FaGoogle></FaGoogle> Sign Up with Google</Button>
+                        <Button onClick={handleGithubSignIn} className='p-3' variant="outline-dark"><FaGithub></FaGithub> Sign Up with Github</Button>
+                    </ButtonGroup>
+                </div>
             </div>
 
 
