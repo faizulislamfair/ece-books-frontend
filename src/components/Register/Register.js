@@ -118,7 +118,7 @@ const Register = () => {
                             <input type="email" name="email" className={Style.form_control} id="exampleInputEmail1" aria-describedby="emailHelp" required />
                         </div>
                         <div className="mb-3">
-                            <p className='text-start form-text'>Photo URL</p>
+                            <p className='text-start form-text'>Photo URL (Optional)</p>
                             <input type="text" name="photoURL" className={Style.form_control} id="" />
                         </div>
                         <div className="mb-3">

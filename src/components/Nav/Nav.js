@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Nav.css';
 import { Link } from 'react-router-dom';
+import { AuthContext } from './../../contexts/UserContext';
 
 
 const Nav = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+
     return (
         <div className='container'>
             <div className='container d-flex flex-row justify-content-between'>
@@ -13,8 +18,18 @@ const Nav = () => {
                     </div>
                 </Link>
                 <div className='d-flex flex-row justify-content-between nav-items'>
-                    <Link style={{ textDecoration: 'none' }} to={`/signin`}><button className='btn sign-in'>Sign In</button></Link>
-                    <Link style={{ textDecoration: 'none' }} to={`/register`}><button className='btn submit'>Sign Up</button></Link>
+                    {
+                        user?.uid ?
+                            <>
+                                <Link style={{ textDecoration: 'none' }} onClick={logOut}><button className='btn submit'>Logout</button></Link>
+                                <img title={user?.displayName} style={{ height: '55px' }} className='rounded-circle' src={user.photoURL} alt="user_image" />
+                            </>
+                            :
+                            <>
+                                <Link style={{ textDecoration: 'none' }} to={`/signin`}><button className='btn sign-in'>Sign In</button></Link>
+                                <Link style={{ textDecoration: 'none' }} to={`/register`}><button className='btn submit'>Sign Up</button></Link>
+                            </>
+                    }
                 </div>
             </div>
         </div>

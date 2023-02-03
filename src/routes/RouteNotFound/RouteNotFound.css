@@ -1,0 +1,16 @@
+.error {
+    margin: 100px;
+    padding: 100px;
+    background-color: #F0BE90;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #F0BE90;
+    border-radius: 15px;
+}
+
+.error-name {
+    color: #ffffff;
+}
