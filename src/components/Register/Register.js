@@ -135,11 +135,11 @@ const Register = () => {
                         </div>
                     </form>
                     <br />
-                    <p style={{ fontSize: '20px' }}>Already have an account? <Link to='/signin'>Sign In</Link></p>
+                    <p style={{ fontSize: '20px', color: '#80422B', fontWeight: '500' }}>Already have an account? <Link to='/signin'>Sign In</Link></p>
                     <h4 className='text-error'>{error}</h4>
                     <ButtonGroup vertical style={{ width: '90%', marginRight: '40px' }}>
-                        <Button onClick={handleGoogleSignIn} className='mb-2 p-3' variant="outline-danger"> <FaGoogle></FaGoogle> Sign Up with Google</Button>
-                        <Button onClick={handleGithubSignIn} className='p-3' variant="outline-dark"><FaGithub></FaGithub> Sign Up with Github</Button>
+                        <Button onClick={handleGoogleSignIn} className='mb-2 p-3' variant="outline-danger"> <FaGoogle style={{ fontSize: '22px' }}></FaGoogle><span style={{ fontSize: '17px' }}> Sign Up with Google</span> </Button>
+                        <Button onClick={handleGithubSignIn} className='p-3' variant="outline-dark"><FaGithub style={{ fontSize: '23px' }}></FaGithub><span style={{ fontSize: '17px' }}> Sign Up with Github</span></Button>
                     </ButtonGroup>
                 </div>
             </div>

@@ -26,7 +26,9 @@ Link {
 
 
 .all-books {
+    padding: 12px;
     margin-top: 32px;
+    font-size: 17px;
     color: #ffffff;
     background-color: #80422B;
 }
@@ -145,7 +147,7 @@ Link {
 
 
 .reverse-doodle {
-    transform: translate(-215px, 285px);
+    transform: translate(-190px, 285px);
 }
 
 

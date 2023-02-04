@@ -2,14 +2,12 @@
 
 
 .login_title {
-    font-family: 'EB Garamond', serif;
-    height: 36px;
+    font-family: 'Open Sans', sans-serif;
+    height: 34px;
     color: #80422B;
     line-height: 36px;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 400;
-    letter-spacing: 1px;
-    word-spacing: 3px;
 }
 
 

@@ -52,7 +52,7 @@
 }
 
 .sign-in:hover {
-    color: #DCDCDC;
+    color: #ffffff;
     background-color: #80422B;
 }
 
@@ -61,7 +61,7 @@
     height: 54px;
     font-size: 16px;
     font-weight: 600;
-    color: #DCDCDC;
+    color: #ffffff;
     background-color: #80422B;
     border-radius: 8px;
 }

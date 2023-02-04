@@ -9,7 +9,7 @@ const Contribute = () => {
             <div className='contribute-text'>
                 <div className='small-rectangle'>
                 </div>
-                <h3 className='pt-2'>Signup & contribute to the Community</h3>
+                <h3 className='pt-2'>Sign Up & Contribute to the Community</h3>
                 <div className='small-rectangle'>
                 </div>
             </div>
