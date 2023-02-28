@@ -9,3 +9,19 @@
 .book {
     margin-top: 64px;
 }
+
+.update {
+    width: 180px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #157347;
+}
+
+.update:hover {
+    color: #157347;
+    background-color: #fff;
+    border: 1px solid #157347;
+}

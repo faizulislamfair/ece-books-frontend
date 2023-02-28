@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import './Nav.css';
 import { Link } from 'react-router-dom';
 import { AuthContext } from './../../contexts/UserContext';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 
 const Nav = () => {
@@ -22,7 +24,13 @@ const Nav = () => {
                         user?.uid ?
                             <>
                                 <Link style={{ textDecoration: 'none' }} onClick={logOut}><button className='btn submit'>Logout</button></Link>
-                                <img title={user?.displayName} style={{ height: '55px' }} className='rounded-circle' src={user.photoURL} alt="user_image" />
+
+                                <PhotoProvider>
+                                    <PhotoView src={user?.photoURL}>
+                                        <img title={user?.displayName} style={{ height: '55px' }} className='rounded-circle' src={user?.photoURL} alt="user_image" />
+                                    </PhotoView>
+                                </PhotoProvider>
+
                             </>
                             :
                             <>
