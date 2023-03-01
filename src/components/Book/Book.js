@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { AuthContext } from './../../contexts/UserContext';
 import './Book.css';
 import useAdmin from '../../customHooks/useAdmin';
@@ -9,7 +8,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 
 const OneOneBook = ({ each_book }) => {
 
-    const { book_url, image } = each_book;
+    const { image, name, book_url } = each_book;
 
     const { user } = useContext(AuthContext);
     const [isAdmin] = useAdmin(user?.email);
@@ -23,7 +22,7 @@ const OneOneBook = ({ each_book }) => {
 
                         <PhotoProvider>
                             <PhotoView src={image}>
-                                <img className='book_img' src={image} alt="" />
+                                <img className='book_img' src={image} alt={name} />
                             </PhotoView>
                         </PhotoProvider>
 
@@ -35,7 +34,7 @@ const OneOneBook = ({ each_book }) => {
                     <>
                         <PhotoProvider>
                             <PhotoView src={image}>
-                                <img className='book_img' src={image} alt="" />
+                                <img className='book_img' src={image} alt={name} />
                             </PhotoView>
                         </PhotoProvider>
 
