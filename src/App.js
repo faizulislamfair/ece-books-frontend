@@ -22,7 +22,13 @@ function App() {
       path: '/',
       element: <Main></Main>,
       children: [
-        { path: '/', element: <Home></Home> },
+        {
+          path: '/',
+          loader: async () => {
+            return fetch('https://ece-books-server.vercel.app/one_one');
+          },
+          element: <Home></Home>
+        },
         {
           path: '/one_one',
           loader: async () => {
