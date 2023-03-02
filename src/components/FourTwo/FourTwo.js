@@ -16,6 +16,9 @@ const FourTwo = () => {
 
     const fourTwo = useLoaderData();
 
+    const [displayBooks, setDisplayBooks] = useState(fourTwo);
+
+
     const { user } = useContext(AuthContext);
     const [isAdmin] = useAdmin(user?.email);
 
@@ -96,7 +99,7 @@ const FourTwo = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    fourTwo.map((each_book, id) => <BookEight key={id + 1} each_book={each_book}></BookEight>)
+                                    displayBooks.map((each_book, id) => <BookEight key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookEight>)
                                 }
                             </div>
                         </div>
@@ -127,7 +130,7 @@ const FourTwo = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    fourTwo.map((each_book, id) => <BookEight key={id + 1} each_book={each_book}></BookEight>)
+                                    displayBooks.map((each_book, id) => <BookEight key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookEight>)
                                 }
                             </div>
                         </div>
