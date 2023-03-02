@@ -5,7 +5,7 @@ import Book from '../Book/Book';
 import text_merge from './../../assets/images/text_under.svg';
 import copyright_symbol from './../../assets/images/copyright_symbol.svg';
 import button_arrow from './../../assets/images/button_arrow.svg';
-import { useLayoutEffect } from 'react';
+import { useLayoutEffect, useState } from 'react';
 
 
 
@@ -18,6 +18,37 @@ const ThreeOne = () => {
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
+
+    const [book, setBook] = useState({});
+
+
+    const handleBook = event => {
+        event.preventDefault();
+
+        fetch('https://ece-books-server.vercel.app/three_one', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(book)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.acknowledged) {
+                    alert('Book Added Successfully');
+                    event.target.reset();
+                }
+            })
+    }
+
+
+    const handleInputBlur = event => {
+        const field = event.target.name;
+        const value = event.target.value;
+        const newBook = { ...book }
+        newBook[field] = value;
+        setBook(newBook);
+    }
 
 
     return (
@@ -34,7 +65,25 @@ const ThreeOne = () => {
             </div>
 
 
-            <div className="container">
+            <form onSubmit={handleBook}>
+                <div className='form-group mt-2'>
+                    <input onBlur={handleInputBlur} className='form-input' type="text" name='image' placeholder='image_url' required />
+                </div>
+
+                <div className='form-group mt-2'>
+                    <input onBlur={handleInputBlur} className='form-input' type="text" name='name' placeholder='name' required />
+
+                </div>
+
+                <div className='form-group mt-2'>
+                    <input onBlur={handleInputBlur} className='form-input' type="text" name='book_url' placeholder='book_url' required />
+                </div>
+
+                <button className='btn submit mt-3' type="submit">Add Book</button>
+            </form>
+
+
+            <div className="container mt-5">
                 <div className="cards">
                     {
                         threeOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)

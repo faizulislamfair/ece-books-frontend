@@ -63,7 +63,7 @@ const OneTwo = () => {
                 </div>
             </div>
 
-            <form onSubmit={handleBook}>
+            <form className='mt-5' onSubmit={handleBook}>
                 <div className='form-group mt-2'>
                     <input onBlur={handleInputBlur} className='form-input' type="text" name='image' placeholder='image_url' required />
                 </div>
@@ -77,11 +77,11 @@ const OneTwo = () => {
                     <input onBlur={handleInputBlur} className='form-input' type="text" name='book_url' placeholder='book_url' required />
                 </div>
 
-                <button className='btn submit mt-2' type="submit">Add Book</button>
+                <button className='btn submit mt-3' type="submit">Add Book</button>
             </form>
 
 
-            <div className="container">
+            <div className="container mt-5">
                 <div className="cards">
                     {
                         oneTwo.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
