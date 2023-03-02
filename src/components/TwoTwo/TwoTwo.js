@@ -16,6 +16,9 @@ const TwoTwo = () => {
 
     const twoTwo = useLoaderData();
 
+    const [displayBooks, setDisplayBooks] = useState(twoTwo);
+
+
     const { user } = useContext(AuthContext);
     const [isAdmin] = useAdmin(user?.email);
 
@@ -95,7 +98,7 @@ const TwoTwo = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    twoTwo.map((each_book, id) => <BookFour key={id + 1} each_book={each_book}></BookFour>)
+                                    displayBooks.map((each_book, id) => <BookFour key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookFour>)
                                 }
                             </div>
                         </div>
@@ -127,7 +130,7 @@ const TwoTwo = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    twoTwo.map((each_book, id) => <BookFour key={id + 1} each_book={each_book}></BookFour>)
+                                    displayBooks.map((each_book, id) => <BookFour key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookFour>)
                                 }
                             </div>
                         </div>
