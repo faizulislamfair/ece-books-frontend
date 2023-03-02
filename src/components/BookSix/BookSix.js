@@ -3,6 +3,8 @@ import { AuthContext } from '../../contexts/UserContext';
 import useAdmin from '../../customHooks/useAdmin';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import { Link } from 'react-router-dom';
+
 
 
 const ThreeTwoBook = ({ each_book, displayBooks, setDisplayBooks }) => {
@@ -40,7 +42,9 @@ const ThreeTwoBook = ({ each_book, displayBooks, setDisplayBooks }) => {
                 isAdmin ?
                     <>
 
-                        <button className='btn update m-1' >Update</button>
+                        <Link target="_blank" to={`/update_six/${each_book._id}`}>
+                            <button className='btn update m-1' >Update</button>
+                        </Link>
                         <button className='btn delete m-1' onClick={() => handleDelete(each_book)} >Delete</button>
 
                         <PhotoProvider>

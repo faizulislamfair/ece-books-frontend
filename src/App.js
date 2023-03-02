@@ -16,6 +16,12 @@ import RouteNotFound from './routes/RouteNotFound/RouteNotFound';
 import AdminRoute from './routes/AdminRoute/AdminRoute';
 import UpdateOne from './components/UpdateOne/UpdateOne';
 import UpdateTwo from './components/UpdateTwo/UpdateTwo';
+import UpdateThree from './components/UpdateThree/UpdateThree';
+import UpdateFour from './components/UpdateFour/UpdateFour';
+import UpdateFive from './components/UpdateFive/UpdateFive';
+import UpdateSix from './components/UpdateSix/UpdateSix';
+import UpdateSeven from './components/UpdateSeven/UpdateSeven';
+import UpdateEight from './components/UpdateEight/UpdateEight';
 
 
 
@@ -106,6 +112,36 @@ function App() {
           path: '/update_two/:id',
           element: <AdminRoute><UpdateTwo></UpdateTwo></AdminRoute>,
           loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/one_two/${params.id}`)
+        },
+        {
+          path: '/update_three/:id',
+          element: <AdminRoute><UpdateThree></UpdateThree></AdminRoute>,
+          loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/two_one/${params.id}`)
+        },
+        {
+          path: '/update_four/:id',
+          element: <AdminRoute><UpdateFour></UpdateFour></AdminRoute>,
+          loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/two_two/${params.id}`)
+        },
+        {
+          path: '/update_five/:id',
+          element: <AdminRoute><UpdateFive></UpdateFive></AdminRoute>,
+          loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/three_one/${params.id}`)
+        },
+        {
+          path: '/update_six/:id',
+          element: <AdminRoute><UpdateSix></UpdateSix></AdminRoute>,
+          loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/three_two/${params.id}`)
+        },
+        {
+          path: '/update_seven/:id',
+          element: <AdminRoute><UpdateSeven></UpdateSeven></AdminRoute>,
+          loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/four_one/${params.id}`)
+        },
+        {
+          path: '/update_eight/:id',
+          element: <AdminRoute><UpdateEight></UpdateEight></AdminRoute>,
+          loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/four_two/${params.id}`)
         }
       ]
     },

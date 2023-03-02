@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
-const UpdateTwo = () => {
+const UpdateFive = () => {
 
-    const bookTwo = useLoaderData();
+    const bookFive = useLoaderData();
 
-    const [book, setBook] = useState(bookTwo);
+    const [book, setBook] = useState(bookFive);
 
 
     const handleBookUpdate = event => {
         event.preventDefault();
         console.log(book);
 
-        fetch(`https://ece-books-server.vercel.app/one_two/${bookTwo._id}`, {
+        fetch(`https://ece-books-server.vercel.app/three_one/${bookFive._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -42,22 +42,22 @@ const UpdateTwo = () => {
 
     return (
         <div>
-            <h2>Update: {bookTwo.name}</h2>
+            <h2>Update: {bookFive.name}</h2>
 
             <form className='mt-5' onSubmit={handleBookUpdate}>
 
                 <div className='form-group mt-2'>
-                    <input onChange={handleInputChange} className='form-input' defaultValue={bookTwo.image} type="text" name='image' placeholder='image_url' required />
+                    <input onChange={handleInputChange} className='form-input' defaultValue={bookFive.image} type="text" name='image' placeholder='image_url' required />
                 </div>
 
 
                 <div className='form-group mt-2'>
-                    <input onChange={handleInputChange} className='form-input' defaultValue={bookTwo.name} type="text" name='name' placeholder='name' required />
+                    <input onChange={handleInputChange} className='form-input' defaultValue={bookFive.name} type="text" name='name' placeholder='name' required />
                 </div>
 
 
                 <div>
-                    <input onChange={handleInputChange} className='form-input' defaultValue={bookTwo.book_url} type="text" name='book_url' id="" placeholder='book_url' required />
+                    <input onChange={handleInputChange} className='form-input' defaultValue={bookFive.book_url} type="text" name='book_url' id="" placeholder='book_url' required />
                 </div>
 
 
@@ -67,4 +67,4 @@ const UpdateTwo = () => {
     );
 };
 
-export default UpdateTwo;
+export default UpdateFive;
