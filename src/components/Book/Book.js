@@ -18,7 +18,7 @@ const OneOneBook = ({ each_book }) => {
             {
                 isAdmin ?
                     <>
-                        <a className='download' href={book_url} target='_blank'><button className='btn update mb-3'>Update</button></a>
+                        <a className='download' href={book_url} target='_blank'><button className='btn sign-in mb-3'>Update</button></a>
 
                         <PhotoProvider>
                             <PhotoView src={image}>

@@ -15,7 +15,6 @@ const Home = () => {
         <div>
             <div className="main-section container">
 
-
                 <img className='text-merge' src={text_under} alt="" />
                 <div className="main-text">
                     Download all of your academic book pdf from one place <br />

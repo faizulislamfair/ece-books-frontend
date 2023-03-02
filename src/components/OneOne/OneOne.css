@@ -31,6 +31,15 @@
     transform: rotate(180deg);
 }
 
+.form-input {
+    margin-top: 15px;
+    background: rgba(240, 190, 144, 0.1);
+    width: 500px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    padding: 25px;
+}
 
 
 /* -----------------
