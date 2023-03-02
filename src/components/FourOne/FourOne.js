@@ -15,6 +15,9 @@ const FourOne = () => {
 
     const fourOne = useLoaderData();
 
+    const [displayBooks, setDisplayBooks] = useState(fourOne);
+
+
     const { user } = useContext(AuthContext);
     const [isAdmin] = useAdmin(user?.email);
 
@@ -95,7 +98,7 @@ const FourOne = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    fourOne.map((each_book, id) => <BookSeven key={id + 1} each_book={each_book}></BookSeven>)
+                                    displayBooks.map((each_book, id) => <BookSeven key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookSeven>)
                                 }
                             </div>
                         </div>
@@ -129,7 +132,7 @@ const FourOne = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    fourOne.map((each_book, id) => <BookSeven key={id + 1} each_book={each_book}></BookSeven>)
+                                    displayBooks.map((each_book, id) => <BookSeven key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookSeven>)
                                 }
                             </div>
                         </div>
