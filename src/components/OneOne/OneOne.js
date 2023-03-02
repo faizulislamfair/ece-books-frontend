@@ -23,7 +23,7 @@ const OneOne = () => {
     const handleBook = event => {
         event.preventDefault();
 
-        fetch('http://localhost:5000/one_one', {
+        fetch('https://ece-books-server.vercel.app/one_one', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -63,6 +63,7 @@ const OneOne = () => {
                 </div>
             </div>
 
+
             <form onSubmit={handleBook}>
                 <div className='form-group mt-2'>
                     <input onBlur={handleInputBlur} className='form-input' type="text" name='image' placeholder='image_url' required />
@@ -79,6 +80,9 @@ const OneOne = () => {
 
                 <button className='btn submit mt-2' type="submit">Add Book</button>
             </form>
+
+
+
 
             <div className="container">
                 <div className="cards">

@@ -6,7 +6,7 @@ const useAdmin = email => {
 
     useEffect(() => {
         if (email) {
-            fetch(`https://ece-books-server-ihgakqb1a-faizulislamfair.vercel.app/admins/${email}`)
+            fetch(`https://ece-books-server.vercel.app/admins/${email}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
