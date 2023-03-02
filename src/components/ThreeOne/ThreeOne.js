@@ -16,6 +16,9 @@ const ThreeOne = () => {
 
     const threeOne = useLoaderData();
 
+    const [displayBooks, setDisplayBooks] = useState(threeOne);
+
+
 
     const { user } = useContext(AuthContext);
     const [isAdmin] = useAdmin(user?.email);
@@ -98,7 +101,7 @@ const ThreeOne = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    threeOne.map((each_book, id) => <BookFive key={id + 1} each_book={each_book}></BookFive>)
+                                    displayBooks.map((each_book, id) => <BookFive key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookFive>)
                                 }
                             </div>
                         </div>
@@ -130,7 +133,7 @@ const ThreeOne = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    threeOne.map((each_book, id) => <BookFive key={id + 1} each_book={each_book}></BookFive>)
+                                    displayBooks.map((each_book, id) => <BookFive key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookFive>)
                                 }
                             </div>
                         </div>
