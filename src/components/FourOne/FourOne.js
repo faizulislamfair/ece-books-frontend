@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, Link } from 'react-router-dom';
 import './FourOne.css';
 import Book from '../Book/Book';
@@ -6,13 +6,17 @@ import text_merge from './../../assets/images/text_under.svg';
 import copyright_symbol from './../../assets/images/copyright_symbol.svg';
 import button_arrow from './../../assets/images/button_arrow.svg';
 import { useLayoutEffect, useState } from 'react';
-
+import { AuthContext } from './../../contexts/UserContext';
+import useAdmin from '../../customHooks/useAdmin';
 
 
 
 const FourOne = () => {
 
     const fourOne = useLoaderData();
+
+    const { user } = useContext(AuthContext);
+    const [isAdmin] = useAdmin(user?.email);
 
 
     useLayoutEffect(() => {
@@ -55,47 +59,93 @@ const FourOne = () => {
     return (
         <div className='container'>
 
-            <img className='book-merge' src={text_merge} alt="book" />
-            <div className="main-text book-header">
-                <Link to="/">
-                    <img className='rotate' src={button_arrow} alt="" />
-                </Link>
-                <div className='selected'>
-                    4th year Odd semester
-                </div>
-            </div>
+            {
 
-            <form onSubmit={handleBook}>
-                <div className='form-group mt-2'>
-                    <input onBlur={handleInputBlur} className='form-input' type="text" name='image' placeholder='image_url' required />
-                </div>
+                isAdmin ?
 
-                <div className='form-group mt-2'>
-                    <input onBlur={handleInputBlur} className='form-input' type="text" name='name' placeholder='name' required />
+                    <>
 
-                </div>
+                        <img className='book-merge' src={text_merge} alt="book" />
+                        <div className="main-text book-header">
+                            <Link to="/">
+                                <img className='rotate' src={button_arrow} alt="" />
+                            </Link>
+                            <div className='selected'>
+                                4th year Odd semester
+                            </div>
+                        </div>
 
-                <div className='form-group mt-2'>
-                    <input onBlur={handleInputBlur} className='form-input' type="text" name='book_url' placeholder='book_url' required />
-                </div>
+                        <form onSubmit={handleBook}>
+                            <div className='form-group mt-2'>
+                                <input onBlur={handleInputBlur} className='form-input' type="text" name='image' placeholder='image_url' required />
+                            </div>
 
-                <button className='btn submit mt-3' type="submit">Add Book</button>
-            </form>
+                            <div className='form-group mt-2'>
+                                <input onBlur={handleInputBlur} className='form-input' type="text" name='name' placeholder='name' required />
 
-            <div className="container mt-5">
-                <div className="cards">
-                    {
-                        fourOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
-                    }
-                </div>
-            </div>
+                            </div>
 
-            <div className='copyright-section footer-book-gap'>
-                <img src={copyright_symbol} alt="" />
-                <div className='copyright-text'>
-                    2023 All Rights Reserved - Fair & Turag
-                </div>
-            </div>
+                            <div className='form-group mt-2'>
+                                <input onBlur={handleInputBlur} className='form-input' type="text" name='book_url' placeholder='book_url' required />
+                            </div>
+
+                            <button className='btn submit mt-3' type="submit">Add Book</button>
+                        </form>
+
+                        <div className="container mt-5">
+                            <div className="cards">
+                                {
+                                    fourOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
+                                }
+                            </div>
+                        </div>
+
+                        <div className='copyright-section footer-book-gap'>
+                            <img src={copyright_symbol} alt="" />
+                            <div className='copyright-text'>
+                                2023 All Rights Reserved - Fair & Turag
+                            </div>
+                        </div>
+
+
+                    </>
+
+                    :
+
+                    <>
+
+
+                        <img className='book-merge' src={text_merge} alt="book" />
+                        <div className="main-text book-header">
+                            <Link to="/">
+                                <img className='rotate' src={button_arrow} alt="" />
+                            </Link>
+                            <div className='selected'>
+                                4th year Odd semester
+                            </div>
+                        </div>
+
+
+                        <div className="container mt-5">
+                            <div className="cards">
+                                {
+                                    fourOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
+                                }
+                            </div>
+                        </div>
+
+                        <div className='copyright-section footer-book-gap'>
+                            <img src={copyright_symbol} alt="" />
+                            <div className='copyright-text'>
+                                2023 All Rights Reserved - Fair & Turag
+                            </div>
+                        </div>
+
+
+                    </>
+
+            }
+
 
         </div>
     );
