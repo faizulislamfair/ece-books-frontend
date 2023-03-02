@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { useLoaderData, Link } from 'react-router-dom';
 import { AuthContext } from './../../contexts/UserContext';
 import './OneOne.css';
-import Book from '../Book/Book';
+import BookOne from '../BookOne/BookOne';
 import text_merge from './../../assets/images/text_under.svg';
 import copyright_symbol from './../../assets/images/copyright_symbol.svg';
 import button_arrow from './../../assets/images/button_arrow.svg';
@@ -15,6 +15,8 @@ import useAdmin from '../../customHooks/useAdmin';
 const OneOne = () => {
 
     const oneOne = useLoaderData();
+
+    const [displayBooks, setDisplayBooks] = useState(oneOne);
 
     const { user } = useContext(AuthContext);
     const [isAdmin] = useAdmin(user?.email);
@@ -51,6 +53,15 @@ const OneOne = () => {
         const newBook = { ...book }
         newBook[field] = value;
         setBook(newBook);
+    }
+
+
+    const handleDelete = each_book => {
+        const agree = window.confirm(`Are you sure you want to delete: ${each_book.name}`);
+
+        if (agree) {
+            console.log(`deleting product with id: `, each_book._id);
+        }
     }
 
 
@@ -94,7 +105,9 @@ const OneOne = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    oneOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
+                                    displayBooks.map((each_book, id) => <BookOne key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}  >
+
+                                    </BookOne>)
                                 }
                             </div>
                         </div>
@@ -125,7 +138,7 @@ const OneOne = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    oneOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
+                                    displayBooks.map((each_book, id) => <BookOne key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks} ></BookOne>)
                                 }
                             </div>
                         </div>

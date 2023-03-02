@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useLoaderData, Link } from 'react-router-dom';
 import './FourOne.css';
-import Book from '../Book/Book';
+import BookSeven from '../BookSeven/BookSeven';
 import text_merge from './../../assets/images/text_under.svg';
 import copyright_symbol from './../../assets/images/copyright_symbol.svg';
 import button_arrow from './../../assets/images/button_arrow.svg';
@@ -95,7 +95,7 @@ const FourOne = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    fourOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
+                                    fourOne.map((each_book, id) => <BookSeven key={id + 1} each_book={each_book}></BookSeven>)
                                 }
                             </div>
                         </div>
@@ -129,7 +129,7 @@ const FourOne = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    fourOne.map((each_book, id) => <Book key={id + 1} each_book={each_book}></Book>)
+                                    fourOne.map((each_book, id) => <BookSeven key={id + 1} each_book={each_book}></BookSeven>)
                                 }
                             </div>
                         </div>

@@ -1,0 +1,43 @@
+.book_img {
+    width: 200px;
+    height: 300px;
+    border: 4px solid #F0BE90;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.book {
+    margin-top: 64px;
+}
+
+.update {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #157347;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 2px solid #157347;
+}
+
+.update:hover {
+    color: #fff;
+    background-color: #157347;
+}
+
+.delete {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF2400;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 2px solid #FF2400;
+}
+
+.delete:hover {
+    color: #fff;
+    background-color: #FF2400;
+}
