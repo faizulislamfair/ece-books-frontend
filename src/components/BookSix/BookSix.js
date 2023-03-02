@@ -5,7 +5,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
 
-const ThreeTwoBook = ({ each_book }) => {
+const ThreeTwoBook = ({ each_book, displayBooks, setDisplayBooks }) => {
 
     const { image, name, book_url } = each_book;
 
@@ -17,6 +17,19 @@ const ThreeTwoBook = ({ each_book }) => {
 
         if (agree) {
             console.log(`deleting product with id: `, each_book._id);
+
+
+            fetch(`http://localhost:5000/three_two/${each_book._id}`, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount > 0) {
+                        alert('Book deleted successfully!');
+                        const remainingBooks = displayBooks.filter(bk => bk._id !== each_book._id);
+                        setDisplayBooks(remainingBooks);
+                    }
+                })
         }
     }
 

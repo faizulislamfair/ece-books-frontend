@@ -15,6 +15,9 @@ const ThreeTwo = () => {
 
     const threeTwo = useLoaderData();
 
+    const [displayBooks, setDisplayBooks] = useState(threeTwo);
+
+
     const { user } = useContext(AuthContext);
     const [isAdmin] = useAdmin(user?.email);
 
@@ -97,7 +100,7 @@ const ThreeTwo = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    threeTwo.map((each_book, id) => <BookSix key={id + 1} each_book={each_book}></BookSix>)
+                                    displayBooks.map((each_book, id) => <BookSix key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookSix>)
                                 }
                             </div>
                         </div>
@@ -129,7 +132,7 @@ const ThreeTwo = () => {
                         <div className="container mt-5">
                             <div className="cards">
                                 {
-                                    threeTwo.map((each_book, id) => <BookSix key={id + 1} each_book={each_book}></BookSix>)
+                                    displayBooks.map((each_book, id) => <BookSix key={id + 1} each_book={each_book} displayBooks={displayBooks} setDisplayBooks={setDisplayBooks}></BookSix>)
                                 }
                             </div>
                         </div>
