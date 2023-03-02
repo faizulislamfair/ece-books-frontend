@@ -3,16 +3,16 @@ import { useLoaderData } from 'react-router-dom';
 
 const UpdateOne = () => {
 
-    const bookOne = useLoaderData();
+    const bookTwo = useLoaderData();
 
-    const [book, setBook] = useState(bookOne);
+    const [book, setBook] = useState(bookTwo);
 
 
     const handleBookUpdate = event => {
         event.preventDefault();
         console.log(book);
 
-        fetch(`https://ece-books-server.vercel.app/one_one/${bookOne._id}`, {
+        fetch(`https://ece-books-server.vercel.app/one_two/${bookTwo._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -42,22 +42,22 @@ const UpdateOne = () => {
 
     return (
         <div>
-            <h2>Update: {bookOne.name}</h2>
+            <h2>Update: {bookTwo.name}</h2>
 
             <form className='mt-5' onSubmit={handleBookUpdate}>
 
                 <div className='form-group mt-2'>
-                    <input onChange={handleInputChange} className='form-input' defaultValue={bookOne.image} type="text" name='image' placeholder='image_url' required />
+                    <input onChange={handleInputChange} className='form-input' defaultValue={bookTwo.image} type="text" name='image' placeholder='image_url' required />
                 </div>
 
 
                 <div className='form-group mt-2'>
-                    <input onChange={handleInputChange} className='form-input' defaultValue={bookOne.name} type="text" name='name' placeholder='name' required />
+                    <input onChange={handleInputChange} className='form-input' defaultValue={bookTwo.name} type="text" name='name' placeholder='name' required />
                 </div>
 
 
                 <div>
-                    <input onChange={handleInputChange} className='form-input' defaultValue={bookOne.book_url} type="text" name='book_url' id="" placeholder='book_url' required />
+                    <input onChange={handleInputChange} className='form-input' defaultValue={bookTwo.book_url} type="text" name='book_url' id="" placeholder='book_url' required />
                 </div>
 
 

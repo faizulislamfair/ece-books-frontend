@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import Loading from '../../components/Loading/Loading';
 import { AuthContext } from '../../contexts/UserContext';
-import useAdmin from './../../hooks/useAdmin';
+import useAdmin from '../../customHooks/useAdmin';
 
 
 

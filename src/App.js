@@ -13,7 +13,10 @@ import Main from './layout/Main';
 import Register from './components/Register/Register';
 import SignIn from './components/SignIn/SignIn';
 import RouteNotFound from './routes/RouteNotFound/RouteNotFound';
+import AdminRoute from './routes/AdminRoute/AdminRoute';
 import UpdateOne from './components/UpdateOne/UpdateOne';
+import UpdateTwo from './components/UpdateTwo/UpdateTwo';
+
 
 
 function App() {
@@ -96,8 +99,13 @@ function App() {
         },
         {
           path: '/update_one/:id',
-          element: <UpdateOne></UpdateOne>,
+          element: <AdminRoute><UpdateOne></UpdateOne></AdminRoute>,
           loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/one_one/${params.id}`)
+        },
+        {
+          path: '/update_two/:id',
+          element: <AdminRoute><UpdateTwo></UpdateTwo></AdminRoute>,
+          loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/one_two/${params.id}`)
         }
       ]
     },
