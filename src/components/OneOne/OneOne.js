@@ -56,14 +56,6 @@ const OneOne = () => {
     }
 
 
-    const handleDelete = each_book => {
-        const agree = window.confirm(`Are you sure you want to delete: ${each_book.name}`);
-
-        if (agree) {
-            console.log(`deleting product with id: `, each_book._id);
-        }
-    }
-
 
 
     return (
