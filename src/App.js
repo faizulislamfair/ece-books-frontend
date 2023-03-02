@@ -13,6 +13,7 @@ import Main from './layout/Main';
 import Register from './components/Register/Register';
 import SignIn from './components/SignIn/SignIn';
 import RouteNotFound from './routes/RouteNotFound/RouteNotFound';
+import UpdateOne from './components/UpdateOne/UpdateOne';
 
 
 function App() {
@@ -92,6 +93,11 @@ function App() {
         {
           path: '/signin',
           element: <SignIn></SignIn>
+        },
+        {
+          path: '/update_one/:id',
+          element: <UpdateOne></UpdateOne>,
+          loader: ({ params }) => fetch(`https://ece-books-server.vercel.app/one_one/${params.id}`)
         }
       ]
     },

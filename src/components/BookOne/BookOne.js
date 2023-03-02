@@ -4,6 +4,7 @@ import './Book.css';
 import useAdmin from '../../customHooks/useAdmin';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import { Link } from 'react-router-dom';
 
 
 const OneOneBook = ({ each_book, displayBooks, setDisplayBooks }) => {
@@ -21,7 +22,7 @@ const OneOneBook = ({ each_book, displayBooks, setDisplayBooks }) => {
 
         if (agree) {
             console.log(`deleting book with id: `, each_book._id);
-            fetch(`http://localhost:5000/one_one/${each_book._id}`, {
+            fetch(`https://ece-books-server.vercel.app/one_one/${each_book._id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -44,7 +45,9 @@ const OneOneBook = ({ each_book, displayBooks, setDisplayBooks }) => {
                 isAdmin ?
                     <>
 
-                        <button className='btn update m-1' >Update</button>
+                        <Link target="_blank" to={`/update_one/${each_book._id}`}>
+                            <button className='btn update m-1' >Update</button>
+                        </Link>
                         <button className='btn delete m-1' onClick={() => handleDelete(each_book)} >Delete</button>
 
                         <PhotoProvider>

@@ -18,7 +18,7 @@ const FourOneBook = ({ each_book, displayBooks, setDisplayBooks }) => {
         if (agree) {
             console.log(`deleting product with id: `, each_book._id);
 
-            fetch(`http://localhost:5000/four_one/${each_book._id}`, {
+            fetch(`https://ece-books-server.vercel.app/four_one/${each_book._id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

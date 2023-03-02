@@ -19,7 +19,7 @@ const ThreeTwoBook = ({ each_book, displayBooks, setDisplayBooks }) => {
             console.log(`deleting product with id: `, each_book._id);
 
 
-            fetch(`http://localhost:5000/three_two/${each_book._id}`, {
+            fetch(`https://ece-books-server.vercel.app/three_two/${each_book._id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
