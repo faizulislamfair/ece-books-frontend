@@ -23,6 +23,7 @@
     width: 627px;
     height: 233px;
     padding: 0.375rem 0.75rem;
+    padding-bottom: 180px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -69,4 +70,34 @@
 .submit:hover {
     color: #80422B;
     border: 1px solid #80422B;
+}
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.contribute-span {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #EB2929;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+    color: #fff;
+    pointer-events: none;
+    background-color: #9D3C18;
+    border-color: #9D3C18;
 }

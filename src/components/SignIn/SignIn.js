@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useLayoutEffect, useState } from 'react';
 import Style from './SignIn.module.css';
 import contribute from './../../assets/images/contribute.svg'
 import { Button, ButtonGroup } from 'react-bootstrap';
@@ -13,6 +13,10 @@ import copyright_symbol from './../../assets/images/copyright_symbol.svg';
 const SignIn = () => {
 
     const [error, setError] = useState('');
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
 
     const { signIn, providerLogin } = useContext(AuthContext);
