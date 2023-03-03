@@ -17,7 +17,7 @@ const Home = () => {
 
                 <img className='text-merge' src={text_under} alt="" />
                 <div className="main-text">
-                    Download all of your academic book pdf from one place <br />
+                    Download all of your academic books pdf from one place <br />
                     without any hassle!
                 </div>
 
