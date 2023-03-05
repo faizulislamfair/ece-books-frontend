@@ -70,15 +70,15 @@ const ThreeOne = () => {
                     <>
 
                         <img className='book-merge' src={text_merge} alt="book" />
-                        <div className="main-text book-header">
-                            <Link to="/">
+                        <Link to="/">
+                            <div className='arrow-place'>
                                 <img className='rotate' src={button_arrow} alt="" />
-                            </Link>
-                            <div className='selected'>
-                                3rd year Odd semester
                             </div>
-                        </div>
+                        </Link>
 
+                        <div className="main-text">
+                            3rd year Odd semester
+                        </div>
 
                         <form onSubmit={handleBook}>
                             <div className='form-group mt-2'>
@@ -120,15 +120,15 @@ const ThreeOne = () => {
                     <>
 
                         <img className='book-merge' src={text_merge} alt="book" />
-                        <div className="main-text book-header">
-                            <Link to="/">
+                        <Link to="/">
+                            <div className='arrow-place'>
                                 <img className='rotate' src={button_arrow} alt="" />
-                            </Link>
-                            <div className='selected'>
-                                3rd year Odd semester
                             </div>
-                        </div>
+                        </Link>
 
+                        <div className="main-text">
+                            3rd year Odd semester
+                        </div>
 
                         <div className="container mt-5">
                             <div className="cards">

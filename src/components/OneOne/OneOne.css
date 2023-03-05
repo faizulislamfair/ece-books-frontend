@@ -7,7 +7,7 @@
 
 .book-merge {
     position: absolute;
-    transform: translate(-130px, 40px);
+    transform: translate(-115px, 125px);
     width: 17%;
     z-index: -1;
 }
@@ -16,20 +16,23 @@
     margin-top: 230px;
 }
 
-.book-header {
-    display: flex;
-    margin-left: 15px;
+
+.arrow-place {
+    transform: translate(-560px, 105px);
 }
-
-
-.book-header .selected {
-    transform: translateX(435px);
-}
-
 
 .rotate {
     transform: rotate(180deg);
 }
+
+.main-text {
+    margin-top: 60px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 54px;
+    font-weight: 600;
+}
+
 
 .form-input {
     margin-top: 15px;
@@ -46,11 +49,88 @@
     Media Queries
 ------------------*/
 
+
+
+
 /* Mobile Devices */
 
 
+@media only screen and (max-width: 320px) {
 
-@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+
+    .footer-book-gap {
+        margin-top: 120px;
+    }
+
+    .main-text {
+        margin-top: 60px;
+        font-size: 22px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 600;
+    }
+
+
+    .book-merge {
+        transform: translate(-105px, 107px);
+        width: 50%;
+    }
+
+    .arrow-place {
+        transform: translate(-135px, 90px);
+    }
+
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+
+    .footer-book-gap {
+        margin-top: 120px;
+    }
+
+    .main-text {
+        margin-top: 60px;
+        font-size: 22px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 600;
+    }
+
+
+    .book-merge {
+        transform: translate(-105px, 107px);
+        width: 50%;
+    }
+
+    .arrow-place {
+        transform: translate(-160px, 90px);
+    }
+
+}
+
+
+
+
+@media only screen and (min-width:400px) and (max-width: 688px) {
 
     .container {
         width: 100%;
@@ -64,6 +144,23 @@
         margin-top: 120px;
     }
 
+    .main-text {
+        margin-top: 60px;
+        font-size: 25px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 600;
+    }
+
+
+    .book-merge {
+        transform: translate(-105px, 107px);
+        width: 40%;
+    }
+
+    .arrow-place {
+        transform: translate(-195px, 90px);
+    }
 
 }
 
@@ -75,4 +172,49 @@
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .main-text {
+        margin-top: 60px;
+        font-size: 25px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 600;
+    }
+
+
+    .book-merge {
+        transform: translate(-100px, 107px);
+        width: 22%;
+    }
+
+    .arrow-place {
+        transform: translate(-260px, 95px);
+    }
+
+}
+
+
+
+@media only screen and (min-width:992px) and (max-width: 1400px) {
+
+
+
+    .main-text {
+        margin-top: 60px;
+        font-size: 25px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 600;
+    }
+
+
+    .book-merge {
+        transform: translate(-100px, 107px);
+        width: 22%;
+    }
+
+    .arrow-place {
+        transform: translate(-430px, 95px);
+    }
+
 }

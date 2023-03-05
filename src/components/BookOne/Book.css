@@ -41,3 +41,39 @@
     color: #fff;
     background-color: #FF2400;
 }
+
+
+
+
+
+
+
+
+/* Mobile Devices */
+
+
+@media only screen and (max-width: 320px) {
+
+    .book_img {
+        width: 95%;
+    }
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width: 400px) {
+
+    .book_img {
+        width: 95%;
+    }
+}
+
+
+
+
+@media only screen and (min-width:400px) and (max-width: 688px) {
+
+    .book_img {
+        width: 95%;
+    }
+}

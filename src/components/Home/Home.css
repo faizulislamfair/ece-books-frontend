@@ -39,14 +39,6 @@ Link {
 }
 
 
-.main-text {
-    margin-top: 60px;
-    font-size: 35px;
-    text-align: center;
-    line-height: 54px;
-    font-weight: 600;
-}
-
 .text-merge {
     position: absolute;
     transform: translate(-160px, 42px);

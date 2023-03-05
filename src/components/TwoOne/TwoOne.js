@@ -68,14 +68,17 @@ const TwoOne = () => {
                     <>
 
                         <img className='book-merge' src={text_merge} alt="book" />
-                        <div className="main-text book-header">
-                            <Link to="/">
+                        <Link to="/">
+                            <div className='arrow-place'>
                                 <img className='rotate' src={button_arrow} alt="" />
-                            </Link>
-                            <div className='selected'>
-                                2nd year Odd semester
                             </div>
+                        </Link>
+
+                        <div className="main-text">
+                            2nd year Odd semester
                         </div>
+
+
 
                         <form className='mt-5' onSubmit={handleBook}>
                             <div className='form-group mt-2'>
@@ -120,13 +123,14 @@ const TwoOne = () => {
 
 
                         <img className='book-merge' src={text_merge} alt="book" />
-                        <div className="main-text book-header">
-                            <Link to="/">
+                        <Link to="/">
+                            <div className='arrow-place'>
                                 <img className='rotate' src={button_arrow} alt="" />
-                            </Link>
-                            <div className='selected'>
-                                2nd year Odd semester
                             </div>
+                        </Link>
+
+                        <div className="main-text">
+                            2nd year Odd semester
                         </div>
 
 

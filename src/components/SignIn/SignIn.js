@@ -100,8 +100,8 @@ const SignIn = () => {
                     <p style={{ fontSize: '20px', color: '#80422B', fontWeight: '500' }}>New to ECE-Books? <Link to='/register'>Create a New Account</Link></p>
                     <h4 className={Style.text_error}>{error}</h4>
                     <ButtonGroup vertical style={{ width: '90%', marginRight: '40px' }}>
-                        <Button onClick={handleGoogleSignIn} className='mb-2 p-3' variant="outline-danger"> <FaGoogle style={{ fontSize: '22px' }}></FaGoogle><span style={{ fontSize: '17px' }}> Sign Up with Google</span> </Button>
-                        <Button onClick={handleGithubSignIn} className='p-3' variant="outline-dark"><FaGithub style={{ fontSize: '23px' }}></FaGithub><span style={{ fontSize: '17px' }}> Sign Up with Github</span></Button>
+                        <Button onClick={handleGoogleSignIn} className='mb-2 p-3' variant="outline-danger"> <FaGoogle style={{ fontSize: '22px' }}></FaGoogle><span style={{ fontSize: '17px' }}> Sign In with Google</span> </Button>
+                        <Button onClick={handleGithubSignIn} className='p-3' variant="outline-dark"><FaGithub style={{ fontSize: '23px' }}></FaGithub><span style={{ fontSize: '17px' }}> Sign In with Github</span></Button>
                     </ButtonGroup>
                 </div>
             </div>

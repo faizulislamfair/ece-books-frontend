@@ -44,11 +44,11 @@ const SignUp = () => {
         <form onSubmit={handleContribute}>
             <div className="mb-3">
                 <p className='text-start form-text'>Name</p>
-                <input onBlur={handleInputBlur} type="text" name='name' className="form-control" />
+                <input onBlur={handleInputBlur} type="text" name='name' className="form-control" required />
             </div>
             <div className="mb-3">
                 <p className='text-start form-text'>Email</p>
-                <input onBlur={handleInputBlur} type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <input onBlur={handleInputBlur} type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
             </div>
             <div className="mb-3">
                 <div className='d-flex flex-row'>
@@ -67,7 +67,7 @@ const SignUp = () => {
                             </>
                     }
                 </div>
-                <input onBlur={handleInputBlur} type="text" name='book_url' placeholder="Leave the book's pdf link or any message you want to convey!" className="form-control-message" />
+                <input onBlur={handleInputBlur} type="text" name='book_url' placeholder="Leave the book's pdf link or any message you want to convey!" className="form-control-message" required />
             </div>
             <div className='d-flex flex-row justify-content-between'>
 

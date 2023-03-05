@@ -68,13 +68,14 @@ const FourTwo = () => {
                     <>
 
                         <img className='book-merge' src={text_merge} alt="book" />
-                        <div className="main-text book-header">
-                            <Link to="/">
+                        <Link to="/">
+                            <div className='arrow-place'>
                                 <img className='rotate' src={button_arrow} alt="" />
-                            </Link>
-                            <div className='selected'>
-                                4th year Even semester
                             </div>
+                        </Link>
+
+                        <div className="main-text">
+                            4th year Even semester
                         </div>
 
 
@@ -118,13 +119,14 @@ const FourTwo = () => {
                     <>
 
                         <img className='book-merge' src={text_merge} alt="book" />
-                        <div className="main-text book-header">
-                            <Link to="/">
+                        <Link to="/">
+                            <div className='arrow-place'>
                                 <img className='rotate' src={button_arrow} alt="" />
-                            </Link>
-                            <div className='selected'>
-                                4th year Even semester
                             </div>
+                        </Link>
+
+                        <div className="main-text">
+                            4th year Even semester
                         </div>
 
                         <div className="container mt-5">

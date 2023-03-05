@@ -68,13 +68,14 @@ const OneTwo = () => {
                     <>
 
                         <img className='book-merge' src={text_merge} alt="book" />
-                        <div className="main-text book-header">
-                            <Link to="/">
+                        <Link to="/">
+                            <div className='arrow-place'>
                                 <img className='rotate' src={button_arrow} alt="" />
-                            </Link>
-                            <div className='selected'>
-                                1st year Even semester
                             </div>
+                        </Link>
+
+                        <div className="main-text">
+                            1st year Even semester
                         </div>
 
                         <form className='mt-5' onSubmit={handleBook}>
@@ -117,15 +118,15 @@ const OneTwo = () => {
                     <>
 
                         <img className='book-merge' src={text_merge} alt="book" />
-                        <div className="main-text book-header">
-                            <Link to="/">
+                        <Link to="/">
+                            <div className='arrow-place'>
                                 <img className='rotate' src={button_arrow} alt="" />
-                            </Link>
-                            <div className='selected'>
-                                1st year Even semester
                             </div>
-                        </div>
+                        </Link>
 
+                        <div className="main-text">
+                            1st year Even semester
+                        </div>
 
                         <div className="container mt-5">
                             <div className="cards">
