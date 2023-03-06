@@ -56,3 +56,383 @@
     width: 580px;
     margin-left: 10px;
 }
+
+
+.sign_in_button {
+    width: 580px;
+    margin-right: 45px;
+    height: 55px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #80422B;
+    border-radius: 8px;
+    border: 1px solid #80422B;
+
+}
+
+.sign_in_button:hover {
+    color: #80422B;
+    border: 1px solid #80422B;
+    background-color: #fff;
+}
+
+
+
+.button_group {
+    margin-right: 40px;
+}
+
+
+.copyright_section {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 120px;
+}
+
+
+.copyright_text {
+    color: #969696;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.shifting_option {
+    font-size: 20px;
+    color: #80422B;
+    font-weight: 500;
+}
+
+
+/* Mobile Devices */
+
+
+
+@media only screen and (min-width:320px) and (max-width: 350px) {
+
+    .login_title {
+        font-family: 'Open Sans', sans-serif;
+        height: 24px;
+        color: #80422B;
+        line-height: 36px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+
+
+    .login_section_main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .login_section_main img {
+        width: 45%;
+        height: 70%;
+    }
+
+
+    .sign_in_button {
+        width: 30%;
+        margin-right: 280px;
+        height: 40px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #80422B;
+        border-radius: 8px;
+        border: 1px solid #80422B;
+
+    }
+
+    .button_group {
+        margin-right: 0px;
+        width: 40%;
+        margin-left: 30px;
+    }
+
+    .form_control {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        display: block;
+        width: 200px;
+        height: 40px;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: rgba(240, 190, 144, 0.1);
+        border: 1px solid #ffffff;
+        border-radius: 16px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .form_inputs {
+        margin-left: 55px;
+    }
+
+
+    .copyright_section {
+        width: 90%;
+    }
+
+
+    .copyright_text {
+        width: 90%;
+    }
+
+
+    .shifting_option {
+        width: 45%;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width:350px) and (max-width: 400px) {
+
+
+
+    .login_section_main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .login_section_main img {
+        margin-left: 30px;
+        width: 50%;
+        height: 70%;
+    }
+
+
+    .sign_in_button {
+        width: 45%;
+        margin-right: 220px;
+        height: 55px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #80422B;
+        border-radius: 8px;
+        border: 1px solid #80422B;
+
+    }
+
+    .button_group {
+        margin-right: 0px;
+        width: 50%;
+        margin-left: 30px;
+    }
+
+    .form_control {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        display: block;
+        width: 250px;
+        height: 40px;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: rgba(240, 190, 144, 0.1);
+        border: 1px solid #ffffff;
+        border-radius: 16px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .form_inputs {
+        margin-left: 55px;
+    }
+
+
+    .copyright_section {
+        margin: 40px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 120px;
+    }
+
+
+    .copyright_text {
+        color: #969696;
+        text-align: center;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+
+    .shifting_option {
+        width: 55%;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+
+}
+
+
+
+
+@media only screen and (min-width:400px) and (max-width: 688px) {
+    .login_section_main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .login_section_main img {
+        margin-left: 40px;
+        width: 70%;
+        height: 90%;
+    }
+
+    .form_inputs {
+        margin-left: 50px;
+    }
+
+    .form_control {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        display: block;
+        width: 280px;
+        height: 40px;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: rgba(240, 190, 144, 0.1);
+        border: 1px solid #ffffff;
+        border-radius: 16px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+
+    .text_error {
+        margin-bottom: 15px;
+        color: crimson;
+        background-color: aliceblue;
+        width: 320px;
+        margin-left: 10px;
+    }
+
+
+    .button_group {
+        margin-right: 0px;
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    .sign_in_button {
+        width: 280px;
+        margin-right: 0px;
+        height: 55px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #80422B;
+        border-radius: 8px;
+        border: 1px solid #80422B;
+
+    }
+
+}
+
+
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    .login_section_main {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+    }
+
+    .login_section_main img {
+        width: 100%;
+    }
+
+    .form_control {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        display: block;
+        width: 580px;
+        height: 60px;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: rgba(240, 190, 144, 0.1);
+        border: 1px solid #ffffff;
+        border-radius: 16px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+
+    .text_error {
+        margin-bottom: 15px;
+        color: crimson;
+        background-color: aliceblue;
+        width: 580px;
+        margin-left: 10px;
+    }
+
+    .button_group {
+        margin-right: 10px;
+    }
+
+    .sign_in_button {
+        width: 580px;
+        margin-right: 25px;
+        height: 55px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #80422B;
+        border-radius: 8px;
+        border: 1px solid #80422B;
+
+    }
+
+    .form_inputs {
+        margin-left: 50px;
+    }
+
+}
+
+
+
+@media only screen and (min-width:992px) and (max-width: 1400px) {
+    .login_section_main {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+    .login_section_main img {
+        width: 100%;
+    }
+}
