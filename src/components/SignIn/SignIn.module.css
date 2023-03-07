@@ -111,6 +111,8 @@
 }
 
 
+
+
 /* Mobile Devices */
 
 
@@ -156,7 +158,7 @@
     .button_group {
         margin-right: 0px;
         width: 40%;
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
     .form_control {
@@ -235,7 +237,7 @@
     .button_group {
         margin-right: 0px;
         width: 50%;
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
     .form_control {

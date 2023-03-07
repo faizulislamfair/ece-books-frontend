@@ -108,46 +108,49 @@ const Register = () => {
             <div className={Style.register_section_main}>
                 <img src={signup} alt="" />
                 <div>
-                    <form onSubmit={handleSubmit}>
-                        <div className="mb-3">
-                            <p className='text-start form-text'>Name</p>
-                            <input type="text" name="name" className={Style.form_control} required />
-                        </div>
-                        <div className="mb-3">
-                            <p className='text-start form-text'>Email</p>
-                            <input type="email" name="email" className={Style.form_control} id="exampleInputEmail1" aria-describedby="emailHelp" required />
-                        </div>
-                        <div className="mb-3">
-                            <p className='text-start form-text'>Photo URL (Optional)</p>
-                            <input type="text" name="photoURL" className={Style.form_control} id="" />
-                        </div>
-                        <div className="mb-3">
-                            <p className='text-start form-text'>Password</p>
-                            <input type="password" name="password" className={Style.form_control} id="" required />
-                        </div>
-                        <div className="mb-3">
-                            <p className='text-start form-text'>Confirm Password</p>
-                            <input type="password" name="confirm" className={Style.form_control} id="" required />
+                    <form className={Style.form} onSubmit={handleSubmit}>
+                        <div className={Style.form_inputs}>
+                            <div className="mb-3">
+                                <p className='text-start form-text'>Name</p>
+                                <input type="text" name="name" className={Style.form_control} required />
+                            </div>
+                            <div className="mb-3">
+                                <p className='text-start form-text'>Email</p>
+                                <input type="email" name="email" className={Style.form_control} id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                            </div>
+                            <div className="mb-3">
+                                <p className='text-start form-text'>Photo URL (Optional)</p>
+                                <input type="text" name="photoURL" className={Style.form_control} id="" />
+                            </div>
+                            <div className="mb-3">
+                                <p className='text-start form-text'>Password</p>
+                                <input type="password" name="password" className={Style.form_control} id="" required />
+                            </div>
+                            <div className="mb-3">
+                                <p className='text-start form-text'>Confirm Password</p>
+                                <input type="password" name="confirm" className={Style.form_control} id="" required />
+                            </div>
                         </div>
                         <br />
                         <div className="mb-3">
-                            <input style={{ width: '580px', marginRight: '45px', height: '55px', fontSize: '1.5rem', fontWeight: '400', lineHeight: '1.5' }} className='btn submit' type="submit" value="Sign Up" />
+                            <input className={Style.sign_up_button} type="submit" value="Sign Up" />
                         </div>
                     </form>
                     <br />
-                    <p style={{ fontSize: '20px', color: '#80422B', fontWeight: '500' }}>Already have an account? <Link to='/signin'>Sign In</Link></p>
-                    <h4 className='text-error'>{error}</h4>
-                    <ButtonGroup vertical style={{ width: '90%', marginRight: '40px' }}>
-                        <Button onClick={handleGoogleSignIn} className='mb-2 p-3' variant="outline-danger"> <FaGoogle style={{ fontSize: '22px' }}></FaGoogle><span style={{ fontSize: '17px' }}> Sign Up with Google</span> </Button>
-                        <Button onClick={handleGithubSignIn} className='p-3' variant="outline-dark"><FaGithub style={{ fontSize: '23px' }}></FaGithub><span style={{ fontSize: '17px' }}> Sign Up with Github</span></Button>
-                    </ButtonGroup>
+                    <p className={Style.shifting_option}>Already have an account? <Link to='/signin'>Sign In</Link></p>
+                    <h4 className={Style.text_error}>{error}</h4>
+                    <div className={Style.button_group}>
+                        <ButtonGroup vertical style={{ width: '90%' }}>
+                            <Button onClick={handleGoogleSignIn} className='mb-2 p-3' variant="outline-danger"> <FaGoogle style={{ fontSize: '22px' }}></FaGoogle><span style={{ fontSize: '17px' }}> Sign Up with Google</span> </Button>
+                            <Button onClick={handleGithubSignIn} className='p-3' variant="outline-dark"><FaGithub style={{ fontSize: '23px' }}></FaGithub><span style={{ fontSize: '17px' }}> Sign Up with Github</span></Button>
+                        </ButtonGroup>
+                    </div>
                 </div>
             </div>
 
-
-            <div className='copyright-section footer-book-gap'>
+            <div className={Style.copyright_section}>
                 <img src={copyright_symbol} alt="" />
-                <div className='copyright-text'>
+                <div className={Style.copyright_text}>
                     2023 All Rights Reserved - Fair & Turag
                 </div>
             </div>
