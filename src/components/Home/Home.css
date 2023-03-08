@@ -165,27 +165,461 @@ Link {
 
 
 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+/* Mobile Devices */
 
 
+@media only screen and (max-width: 320px) {
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+    .text-merge {
+        display: none;
+    }
+
+    .image-section img {
+        margin-top: -70px;
+        width: 100%;
+    }
+
+    .all-books {
+        margin-top: 32px;
+        font-size: 12px;
+        color: #ffffff;
+        background-color: #80422B;
+        width: 127px;
+        height: 40px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+    .up-down img {
+        width: 15%;
+    }
+
+    .book-section {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .rect-gap {
+        display: none;
+    }
+
+
+    .download-text {
+        width: 220px;
+        height: 96px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 150%;
+        margin-bottom: 20px;
+    }
+
+    .reverse-doodle {
+        display: none;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        margin-top: 15px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #5B342B;
+    }
+
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width: 400px) {
+    .all-books {
+        padding: 12px;
+        margin-top: 32px;
+        font-size: 12px;
+        color: #ffffff;
+        background-color: #80422B;
+        width: 127px;
+        height: 40px;
+    }
+
+    .image-section img {
+        margin-top: -70px;
+        width: 95%;
+    }
+
+
+    .text-merge {
+        display: none;
+    }
+
+    .up-down img {
+        width: 12%;
+    }
+
+
+    .book-section {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .rect-gap {
+        display: none;
+    }
+
+
+    .download-text {
+        width: 220px;
+        height: 96px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 150%;
+        margin-bottom: 20px;
+    }
+
+    .reverse-doodle {
+        display: none;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 15px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #5B342B;
+    }
+}
 
 
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width:400px) and (max-width: 688px) {
+
+    .all-books {
+        padding: 12px;
+        margin-top: 32px;
+        font-size: 12px;
+        color: #ffffff;
+        background-color: #80422B;
+        width: 127px;
+        height: 40px;
+    }
+
+    .image-section img {
+        margin-top: -50px;
+        width: 85%;
+    }
+
+
+    .text-merge {
+        transform: translate(-20px, 25px);
+        width: 25%;
+    }
+
+    .up-down img {
+        width: 10%;
+    }
+
+
+
+    .book-section {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .rect-gap {
+        display: none;
+    }
+
+
+    .download-text {
+        width: 385px;
+        height: 96px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 150%;
+    }
+
+    .reverse-doodle {
+        display: none;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+        width: 385px;
+        margin-top: 15px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #5B342B;
+    }
+
+}
+
+
+
+/* Tablet Devices */
+
+
+@media only screen and (min-width:688px) and (max-width: 768px) {
+    .each-button {
+        width: 260px;
+        height: 60px;
+        color: #5B342B;
+        border: 2px solid #F0BE90;
+        background-color: #ffffff;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+    }
+
+    .each-button:hover {
+        width: 260px;
+        background-color: #F0BE90;
+        color: #ffffff;
+    }
+
+    .last-button {
+        width: 260px;
+        height: 60px;
+        color: #5B342B;
+        border: 2px solid #F0BE90;
+        background-color: #ffffff;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    .last-button:hover {
+        width: 260px;
+        background-color: #F0BE90;
+        color: #ffffff;
+    }
 
 
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+
+    .book-section {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .rectangle {
+        background-color: #F0BE90;
+        width: 8px;
+        height: 60px;
+    }
+
+    .rect-gap {
+        margin-bottom: 58px;
+    }
+
+
+    .download-text {
+        width: 300px;
+        height: 96px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 150%;
+        transform: translateX(-150px);
+    }
+
+    .reverse-doodle {
+        display: none;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #5B342B;
+        transform: translateX(-40px);
+    }
+
+    .shapes {
+        transform: translateX(-40px);
+    }
+
+    .text-flex {
+        transform: translateX(-40px);
+    }
+
+
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+
+    .all-books {
+        padding: 12px;
+        margin-top: 32px;
+        font-size: 12px;
+        color: #ffffff;
+        background-color: #80422B;
+        width: 127px;
+        height: 40px;
+    }
+
+    .image-section img {
+        margin-top: -50px;
+        width: 75%;
+    }
+
+
+    .text-merge {
+        transform: translate(-70px, 25px);
+        width: 22%;
+    }
+
+
+    .book-section {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .rectangle {
+        background-color: #F0BE90;
+        width: 8px;
+        height: 60px;
+    }
+
+    .rect-gap {
+        margin-bottom: 58px;
+    }
+
+
+    .download-text {
+        width: 380px;
+        height: 96px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 150%;
+        transform: translateX(-150px);
+    }
+
+    .reverse-doodle {
+        display: none;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+        width: 295px;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #5B342B;
+    }
+
+}
+
+
+@media only screen and (min-width:992px) and (max-width: 1060px) {
+
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #5B342B;
+    }
+
+    .shapes {
+        display: none;
+    }
+
+
+    .download-text {
+        width: 80%;
+        transform: translateX(10px);
+    }
+
+    .book-section {
+        margin-top: 135px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 35px;
+    }
+
+    .reverse-doodle {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:1060px) and (max-width: 1199px) {
+
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #5B342B;
+    }
+
+    .shapes {
+        display: none;
+    }
+
+    .book-section {
+        margin-top: 135px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 35px;
+    }
+
+
+    .book-section {
+        transform: translateX(-60px);
+    }
+
+}
+
+
+@media only screen and (min-width:992px) and (max-width: 1400px) {
+
+    .image-section img {
+        width: 65%;
+    }
+
+
+    .text-merge {
+        transform: translate(-110px, 25px);
+        width: 18%;
+    }
+
+}

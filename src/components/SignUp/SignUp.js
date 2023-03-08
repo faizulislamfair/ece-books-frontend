@@ -41,51 +41,53 @@ const SignUp = () => {
 
 
     return (
-        <form onSubmit={handleContribute}>
-            <div className="mb-3">
-                <p className='text-start form-text'>Name</p>
-                <input onBlur={handleInputBlur} type="text" name='name' className="form-control" required />
-            </div>
-            <div className="mb-3">
-                <p className='text-start form-text'>Email</p>
-                <input onBlur={handleInputBlur} type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
-            </div>
-            <div className="mb-3">
-                <div className='d-flex flex-row'>
+        <div className='container'>
+            <form className='contribute-form' onSubmit={handleContribute}>
+                <div className="mb-3">
+                    <p className='text-start form-text'>Name</p>
+                    <input onBlur={handleInputBlur} type="text" name='name' className="form-control" required />
+                </div>
+                <div className="mb-3">
+                    <p className='text-start form-text'>Email</p>
+                    <input onBlur={handleInputBlur} type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                </div>
+                <div className="mb-3">
+                    <div className='d-flex flex-row'>
+                        {
+                            user?.uid ?
+                                <>
+                                    <p className='text-start form-text'>Message </p>
+
+                                </>
+                                :
+                                <>
+
+                                    <p className='text-start form-text'>Message </p>
+                                    <p className='contribute-span'><img src={info} alt="" /> Please sign in to send a message or be a contributor</p>
+
+                                </>
+                        }
+                    </div>
+                    <input onBlur={handleInputBlur} type="text" name='book_url' placeholder="Leave the book's pdf link or any message you want to convey!" className="form-control-message" required />
+                </div>
+                <div className='d-flex flex-row justify-content-between'>
+
                     {
                         user?.uid ?
                             <>
-                                <p className='text-start form-text'>Message </p>
-
+                                <button className='btn submit' type='submit'>Submit</button>
                             </>
                             :
                             <>
-
-                                <p className='text-start form-text'>Message </p>
-                                <p className='contribute-span'><img src={info} alt="" /> Please sign in to send a message or be a contributor</p>
-
+                                <Link style={{ textDecoration: 'none' }} to={`/signin`}><button className='btn sign-in'>Sign In</button></Link>
+                                <button className='btn submit disabled' type='submit'>Submit</button>
                             </>
                     }
+
+
                 </div>
-                <input onBlur={handleInputBlur} type="text" name='book_url' placeholder="Leave the book's pdf link or any message you want to convey!" className="form-control-message" required />
-            </div>
-            <div className='d-flex flex-row justify-content-between'>
-
-                {
-                    user?.uid ?
-                        <>
-                            <button className='btn submit' type='submit'>Submit</button>
-                        </>
-                        :
-                        <>
-                            <Link style={{ textDecoration: 'none' }} to={`/signin`}><button className='btn sign-in'>Sign In</button></Link>
-                            <button className='btn submit disabled' type='submit'>Submit</button>
-                        </>
-                }
-
-
-            </div>
-        </form>
+            </form>
+        </div>
     );
 };
 

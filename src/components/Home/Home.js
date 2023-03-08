@@ -31,6 +31,9 @@ const Home = () => {
                     <img src={main_image} alt="" />
                 </div>
 
+
+
+
                 <div className='up-down mt-5'>
                     <img src={under_arrow} alt="" />
                 </div>
@@ -40,7 +43,7 @@ const Home = () => {
 
 
                 <div id='books' className="book-section mb-5">
-                    <div>
+                    <div className='shapes'>
                         <div className='rectangle rect-gap'>
                         </div>
                         <div className='rectangle'>
@@ -53,16 +56,16 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='btn-box'>
-                        <Link style={{ textDecoration: 'none' }} to={`/one_one`}><button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
-                        <Link style={{ textDecoration: 'none' }} to={`/two_one`}><button className='each-button'>2nd year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
-                        <Link style={{ textDecoration: 'none' }} to={`/three_one`}><button className='each-button'>3rd year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
-                        <Link style={{ textDecoration: 'none' }} to={`/four_one`}><button className='last-button'>4th year Odd semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
+                        <Link style={{ textDecoration: 'none' }} to={`/one_one`}><button className='each-button'>1st year Odd semester &nbsp;&nbsp;&nbsp;<img className='download-option' src={button_arrow} alt="" /></button></Link>
+                        <Link style={{ textDecoration: 'none' }} to={`/two_one`}><button className='each-button'>2nd year Odd semester &nbsp;&nbsp;&nbsp;<img className='download-option' src={button_arrow} alt="" /></button></Link>
+                        <Link style={{ textDecoration: 'none' }} to={`/three_one`}><button className='each-button'>3rd year Odd semester &nbsp;&nbsp;&nbsp;<img className='download-option' src={button_arrow} alt="" /></button></Link>
+                        <Link style={{ textDecoration: 'none' }} to={`/four_one`}><button className='last-button'>4th year Odd semester &nbsp;&nbsp;&nbsp;<img className='download-option' src={button_arrow} alt="" /></button></Link>
                     </div>
                     <div className='btn-box'>
-                        <Link style={{ textDecoration: 'none' }} to={`/one_two`}><button className='each-button'>1st year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
-                        <Link style={{ textDecoration: 'none' }} to={`/two_two`}><button className='each-button'>2nd year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
-                        <Link style={{ textDecoration: 'none' }} to={`/three_two`}><button className='each-button'>3rd year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
-                        <Link style={{ textDecoration: 'none' }} to={`/four_two`}><button className='last-button'>4th year Even semester &nbsp;&nbsp;&nbsp;<img src={button_arrow} alt="" /></button></Link>
+                        <Link style={{ textDecoration: 'none' }} to={`/one_two`}><button className='each-button'>1st year Even semester &nbsp;&nbsp;&nbsp;<img className='download-option' src={button_arrow} alt="" /></button></Link>
+                        <Link style={{ textDecoration: 'none' }} to={`/two_two`}><button className='each-button'>2nd year Even semester &nbsp;&nbsp;&nbsp;<img className='download-option' src={button_arrow} alt="" /></button></Link>
+                        <Link style={{ textDecoration: 'none' }} to={`/three_two`}><button className='each-button'>3rd year Even semester &nbsp;&nbsp;&nbsp;<img className='download-option' src={button_arrow} alt="" /></button></Link>
+                        <Link style={{ textDecoration: 'none' }} to={`/four_two`}><button className='last-button'>4th year Even semester &nbsp;&nbsp;&nbsp;<img className='download-option' src={button_arrow} alt="" /></button></Link>
                     </div>
                 </div>
 
