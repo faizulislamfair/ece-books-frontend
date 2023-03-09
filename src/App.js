@@ -22,6 +22,8 @@ import UpdateFive from './components/UpdateFive/UpdateFive';
 import UpdateSix from './components/UpdateSix/UpdateSix';
 import UpdateSeven from './components/UpdateSeven/UpdateSeven';
 import UpdateEight from './components/UpdateEight/UpdateEight';
+import main_image from './assets/images/main_image.svg';
+import { Helmet } from "react-helmet";
 
 
 
@@ -151,6 +153,36 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+
+        <title>ECE Books</title>
+
+        <link rel="canonical" href="https://ecebooks-71501.web.app/" />
+
+        <meta name="description" content="ECE Books" />
+
+        <meta name="keywords" content="ECE, ECE-Books, RUET, Rajshahi, Bangladesh, 1st year Odd semester, 1st year Even semester, 2nd year Odd semester, 1st year Even semester, 3rd year Odd semester, 3rd year Even semester, 4th year Odd semester, 4th year Even semester" />
+
+        <meta name="author" content="S.M. Faizul Islam Fair Email: faizulislamfair@gmail.com" />
+
+
+        <meta property="og:site_name" content="ECE Books" />
+
+        <meta property="og:site" content="https://ecebooks-71501.firebaseapp.com/" />
+
+        <meta property="og:title" content="ECE-Books" />
+
+        <meta property="og:description"
+          content=" This is a REST API based project about management of academic books which are classified semester-wise" />
+
+        <meta property="og:image" content={main_image} />
+
+        <meta property="og:url" content="https://ecebooks-71501.firebaseapp.com/" />
+
+        <meta property="og:type" content="website" />
+
+      </Helmet>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

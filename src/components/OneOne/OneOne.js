@@ -8,6 +8,7 @@ import copyright_symbol from './../../assets/images/copyright_symbol.svg';
 import button_arrow from './../../assets/images/button_arrow.svg';
 import { useLayoutEffect, useState } from 'react';
 import useAdmin from '../../customHooks/useAdmin';
+import { Helmet } from "react-helmet";
 
 
 
@@ -60,6 +61,13 @@ const OneOne = () => {
 
     return (
         <div className='container'>
+
+            <Helmet>
+                <title>1st year Odd semester</title>
+                <meta name="description" content="1st year Odd semester" />
+            </Helmet>
+
+
 
             {
                 isAdmin ?
