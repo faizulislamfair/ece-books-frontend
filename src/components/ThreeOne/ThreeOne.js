@@ -8,6 +8,7 @@ import button_arrow from './../../assets/images/button_arrow.svg';
 import { useLayoutEffect, useState } from 'react';
 import { AuthContext } from './../../contexts/UserContext';
 import useAdmin from '../../customHooks/useAdmin';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -62,6 +63,11 @@ const ThreeOne = () => {
 
     return (
         <div className='container'>
+
+            <Helmet>
+                <title>3rd year Odd semester</title>
+                <meta name="description" content="3rd year Odd semester" />
+            </Helmet>
 
             {
 
